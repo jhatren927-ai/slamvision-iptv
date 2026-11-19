@@ -95,6 +95,9 @@ jobs:
           if [ -f cache-ondemand.tar.gz ]; then
             git add -f cache-ondemand.tar.gz
           fi
+          if [ -d logos ]; then
+            git add -f logos
+          fi
           git commit -m "Refresh SlamVision IPTV feeds"
           git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -f origin gh-pages
