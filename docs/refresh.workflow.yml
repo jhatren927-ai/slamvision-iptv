@@ -1,0 +1,102 @@
+name: Refresh feeds
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      vod:
+        description: "Force-rebuild the On Demand playlist"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "generate.py"
+      - "validate.py"
+      - "static/**"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh-feeds
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore previous On Demand playlist
+        run: |
+          git fetch origin gh-pages || true
+          mkdir -p output
+          git checkout origin/gh-pages -- slamvision-ondemand.m3u 2>/dev/null || true
+          if [ -f slamvision-ondemand.m3u ]; then
+            mv slamvision-ondemand.m3u output/slamvision-ondemand.m3u
+          fi
+          # Restore the On Demand cache so later pages are not re-downloaded.
+          git checkout origin/gh-pages -- cache-ondemand.tar.gz 2>/dev/null || true
+          if [ -f cache-ondemand.tar.gz ]; then
+            mkdir -p output/.cache
+            tar -xzf cache-ondemand.tar.gz -C output/.cache || true
+            rm -f cache-ondemand.tar.gz
+          fi
+
+      - name: Generate feeds
+        id: gen
+        env:
+          FEED_BASE: https://jhatren927-ai.github.io/slamvision-iptv
+        run: |
+          set +e
+          # A push should refresh live + guide only. The 30-minute cron may
+          # extend On Demand if the file is older than a day, and always
+          # uses a circuit breaker so a sick API is left alone.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.vod }}" = "true" ]; then
+            python3 generate.py --out output --vod always
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            python3 generate.py --out output --vod never
+          else
+            python3 generate.py --out output --vod auto --vod-max-age-hours 24
+          fi
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "generate exit $code"
+          if [ "$code" -eq 2 ]; then
+            echo "API unhealthy; keeping the previously published feeds."
+            exit 0
+          fi
+          exit "$code"
+
+      - name: Validate syntax
+        if: steps.gen.outputs.code == '0'
+        run: python3 validate.py --dir output --head-live 0 --head-vod 0 --probe 0
+
+      - name: Publish gh-pages
+        if: steps.gen.outputs.code == '0'
+        run: |
+          set -euo pipefail
+          cd output
+          if [ -d .cache/ondemand ]; then
+            tar -czf cache-ondemand.tar.gz -C .cache ondemand
+          fi
+          git init
+          git checkout -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f slamvision.m3u slamvision-ondemand.m3u guide.xml logo.png index.html build.json
+          if [ -f cache-ondemand.tar.gz ]; then
+            git add -f cache-ondemand.tar.gz
+          fi
+          git commit -m "Refresh SlamVision IPTV feeds"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -f origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
