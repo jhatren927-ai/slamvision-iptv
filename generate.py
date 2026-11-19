@@ -180,7 +180,13 @@ def attr_block(**attrs: str | int | None) -> str:
     return (" " + " ".join(parts)) if parts else ""
 
 
-def logo_url() -> str:
+LOGO_DIR = Path(__file__).resolve().parent / "static" / "logos"
+
+
+def logo_url(channel_id: str | None = None) -> str:
+    # Per-channel name tile when one exists (tools/make_logos.py), else the brand logo.
+    if channel_id and (LOGO_DIR / f"{channel_id}.png").is_file():
+        return f"{PUBLIC_BASE}/logos/{urllib.parse.quote(channel_id)}.png"
     return f"{PUBLIC_BASE}/logo.png"
 
 
@@ -274,7 +280,7 @@ def write_live_m3u(path: Path, channels: list[dict], now_map: dict[str, dict | N
             **{
                 "tvg-id": cid,
                 "tvg-name": m3u_name(name),
-                "tvg-logo": logo_url(),
+                "tvg-logo": logo_url(cid),
                 "tvg-chno": number,
                 "group-title": group,
             }
@@ -314,7 +320,7 @@ def write_guide(path: Path, channels: list[dict], guide: dict) -> dict:
         if ch.get("number"):
             dn2 = ET.SubElement(el, "display-name")
             dn2.text = str(int(ch["number"]))
-        ET.SubElement(el, "icon", {"src": logo_url()})
+        ET.SubElement(el, "icon", {"src": logo_url(cid)})
 
     programmes = 0
     skipped = 0
@@ -702,6 +708,8 @@ def main() -> int:
     logo_src = Path(__file__).resolve().parent / "static" / "logo.png"
     if logo_src.is_file():
         shutil.copy2(logo_src, out / "logo.png")
+    if LOGO_DIR.is_dir():
+        shutil.copytree(LOGO_DIR, out / "logos", dirs_exist_ok=True)
 
     if args.vod_from_cache:
         if not any((out / ".cache" / "ondemand").glob("*/*.json")):
