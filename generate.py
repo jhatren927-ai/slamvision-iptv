@@ -667,6 +667,15 @@ def write_ondemand_json(out: Path, groups: list[dict], generated_at: str) -> dic
     for path in dest.glob("*.json"):
         if path.name not in keep:
             path.unlink()
+    # Also write under logos/ondemand so the currently installed refresh
+    # workflow (which publishes logos/ but not yet ondemand/) keeps a copy.
+    logo_dest = out / "logos" / "ondemand"
+    logo_dest.mkdir(parents=True, exist_ok=True)
+    for path in dest.glob("*.json"):
+        shutil.copy2(path, logo_dest / path.name)
+    for path in logo_dest.glob("*.json"):
+        if path.name not in keep:
+            path.unlink()
     return {
         "index_bytes": index_path.stat().st_size,
         "category_bytes": cat_bytes,
@@ -956,6 +965,7 @@ def main() -> int:
 
     vod_stats: dict | None = None
     do_vod = args.vod == "always" or (args.vod == "auto" and vod_is_stale(vod_path, args.vod_max_age_hours))
+    cache_ready = any((out / ".cache" / "ondemand").glob("*/*.json"))
     if do_vod:
         log("Building On Demand playlist (this can take a few minutes)…")
         vod_stats = write_ondemand_m3u(vod_path, channels)
@@ -966,6 +976,16 @@ def main() -> int:
         )
         if vod_stats["errors"]:
             log("  errors: " + "; ".join(vod_stats["errors"][:10]))
+    elif cache_ready:
+        # Rebuild the M3U + JSON catalog from cache (no API). This keeps the
+        # split catalog in the publish folder even when the live/guide-only path
+        # is used.
+        log("Rebuilding On Demand catalog from cache (no API calls)…")
+        vod_stats = write_ondemand_m3u_from_cache(vod_path, channels)
+        log(
+            f"On Demand from cache: {vod_stats['entries']} entries in "
+            f"{vod_stats.get('categories', 0)} shelves, {vod_stats.get('bytes', 0)} bytes"
+        )
     elif vod_path.is_file():
         log(f"On Demand playlist kept (age ok): {vod_path.stat().st_size} bytes")
     else:

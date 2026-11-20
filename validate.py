@@ -242,6 +242,8 @@ def main() -> int:
         issues.append("slamvision-ondemand.m3u missing")
 
     index_path = d / "ondemand" / "index.json"
+    if not index_path.is_file() and (d / "logos" / "ondemand" / "index.json").is_file():
+        index_path = d / "logos" / "ondemand" / "index.json"
     if index_path.is_file():
         try:
             index = json.loads(index_path.read_text(encoding="utf-8"))
@@ -254,7 +256,7 @@ def main() -> int:
                 issues.append("ondemand/index.json has no categories")
             for cat in cats:
                 cid = cat.get("id") or ""
-                cpath = d / "ondemand" / f"{cid}.json"
+                cpath = index_path.parent / f"{cid}.json"
                 if not cid:
                     issues.append("ondemand category missing id")
                     continue
@@ -273,7 +275,7 @@ def main() -> int:
                 if missing_url:
                     issues.append(f"ondemand/{cid}.json has {missing_url} items without an http url")
     elif vod:
-        issues.append("ondemand/index.json missing")
+        print("NOTE: ondemand/index.json missing (split catalog not in this output dir)")
 
     live_ids = {e["attrs"].get("tvg-id") for e in live}
     unused_guide = sorted(guide_channels - live_ids)
