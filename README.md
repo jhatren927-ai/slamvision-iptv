@@ -18,10 +18,16 @@ TV guide (also built into the playlist header):
 https://jhatren927-ai.github.io/slamvision-iptv/guide.xml
 ```
 
-On Demand library (add as a second playlist):
+On Demand library (add as a second playlist). Grouped like the Android app: Just Added, year/era channels, promotions, shows, and star channels:
 
 ```
 https://jhatren927-ai.github.io/slamvision-iptv/slamvision-ondemand.m3u
+```
+
+On Demand JSON index (one file per shelf, so a Roku can load a category at a time):
+
+```
+https://jhatren927-ai.github.io/slamvision-iptv/ondemand/index.json
 ```
 
 If GitHub Pages is down, the same files are on the `gh-pages` branch:
@@ -30,6 +36,7 @@ If GitHub Pages is down, the same files are on the `gh-pages` branch:
 https://raw.githubusercontent.com/jhatren927-ai/slamvision-iptv/gh-pages/slamvision.m3u
 https://raw.githubusercontent.com/jhatren927-ai/slamvision-iptv/gh-pages/guide.xml
 https://raw.githubusercontent.com/jhatren927-ai/slamvision-iptv/gh-pages/slamvision-ondemand.m3u
+https://raw.githubusercontent.com/jhatren927-ai/slamvision-iptv/gh-pages/ondemand/index.json
 ```
 
 ## Watch on Roku with IPTV Smart Player Lite
@@ -48,7 +55,7 @@ The app listing says there are no hidden fees. Availability can change, so check
 - **Live channels** are listed with names, numbers, categories, and a guide for the next 12 hours. The site API will not return 24 hours of guide data.
 - **Tuning a live channel starts the tape that is on now, from the beginning.** It does not join mid-show. When that tape ends, playback stops until you pick the channel again. A server that re-streams 24/7 would be needed for true live TV, and that is not free.
 - The playlist is refreshed every 30 minutes so the current tape stays up to date. If you stay in a channel, the player keeps the file you already started.
-- **On Demand** plays each tape from the start. The list is grouped by channel and is filled in gradually so we do not overload the SlamVision site. It will grow toward the full library.
+- **On Demand** plays each tape from the start. The playlist covers the same library the Android app browses, grouped by shelf (Just Added, years/eras, promotions, shows, star channels). A split JSON catalog under `/ondemand/` lets a Roku load one shelf at a time. Pages are cached so the site API is not hit on every refresh.
 - The player will look like a generic IPTV app, not SlamVision.
 - The full app, including mid-show live tuning, is on Android TV and Fire TV. In Downloader, delete any old SlamVision .apk under Files, then enter code **3059600**.
 
@@ -63,6 +70,4 @@ python3 validate.py --dir output
 
 ## Automatic refresh
 
-A GitHub Actions workflow lives at `docs/refresh.workflow.yml`. It could not be installed automatically because this account’s GitHub token does not include the `workflow` scope.
-
-To turn on the 30-minute refresh, copy that file to `.github/workflows/refresh.yml` and push, or paste it in the GitHub Actions UI. Then enable write permissions for Actions under the repo’s Settings → Actions → General.
+A GitHub Actions workflow at `.github/workflows/refresh.yml` rebuilds the live playlist and guide about every 30 minutes (at :07 and :37). The On Demand library is rebuilt when it is missing or older than a day, from a cached copy of the site’s `/api/ondemand` pages.

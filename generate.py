@@ -119,10 +119,24 @@ def category_label(raw: str | None) -> str:
 
 
 def display_name(channel: dict) -> str:
+    """Viewer-facing name; matches the Android app's ChannelNames.display."""
     cid = str(channel.get("id") or "")
+    name = str(channel.get("name") or cid).strip()
     if cid in DISPLAY_NAME_OVERRIDES:
         return DISPLAY_NAME_OVERRIDES[cid]
-    return str(channel.get("name") or cid)
+    if cid.lower() == "rndm" or name.lower() in {"random wrestling", "random"}:
+        return "Surprise TV"
+    if name.lower() in {"wwe", "wwf", "wwwf"}:
+        return name.upper()
+    return name or cid
+
+
+def category_slug(raw: str | None) -> str:
+    key = (raw or "").strip().lower()
+    if key in CATEGORY_NAMES:
+        return key
+    reverse = {v.lower(): k for k, v in CATEGORY_NAMES.items()}
+    return reverse.get(key, key or "other")
 
 
 def parse_iso(value: str | None) -> datetime | None:
@@ -450,56 +464,338 @@ def iter_channel_tapes(channel_id: str) -> list[dict]:
     return [it for it in items if isinstance(it, dict)]
 
 
-def tape_entries(tape: dict, group: str, logo: str) -> list[tuple[str, str]]:
-    """Return (extinf_line, url) pairs for a tape, one per playable part."""
-    parts = [p for p in (tape.get("parts") or []) if isinstance(p, dict) and (p.get("stream_url") or "").strip()]
-    if not parts:
-        return []
+def catalog_id(raw: str) -> str:
+    s = re.sub(r"[^A-Za-z0-9._-]+", "-", (raw or "").strip())
+    return s.strip("-._") or "other"
+
+
+def section_for(kind: str) -> str:
+    key = (kind or "").strip().lower()
+    if key in {"new", "just added"}:
+        return "Just Added"
+    if key == "promotions":
+        return "Promotions"
+    if key in {"shows", "eras", "shows & eras"}:
+        return "Shows & Eras"
+    if key in {"wrestlers", "star channels"}:
+        return "Star Channels"
+    return "More Channels"
+
+
+def duration_sec(value: Any) -> int:
+    try:
+        dur = float(value)
+    except (TypeError, ValueError):
+        return -1
+    return -1 if dur <= 0 else int(round(dur))
+
+
+def playable_parts(tape: dict) -> list[dict]:
+    parts: list[dict] = []
+    for p in tape.get("parts") or []:
+        if not isinstance(p, dict):
+            continue
+        url = (p.get("stream_url") or "").strip()
+        if not url:
+            continue
+        parts.append(
+            {
+                "url": url,
+                "duration": duration_sec(p.get("duration") or tape.get("duration")),
+                "title": str(p.get("title") or "").strip(),
+            }
+        )
+    return parts
+
+
+def tape_label(tape: dict, part_index: int | None = None, part_count: int = 1) -> str:
     title = str(tape.get("title") or "Untitled tape").strip() or "Untitled tape"
     episode = str(tape.get("episode") or "").strip()
     year = str(tape.get("year") or "").strip()
-    extra_parts = []
+    extra: list[str] = []
     if episode and episode not in title:
-        extra_parts.append(episode)
+        extra.append(episode)
     if year and year not in title and year not in episode:
-        extra_parts.append(year)
-    label = f"{title} ({' · '.join(extra_parts)})" if extra_parts else title
-    key = str(tape.get("key") or tape.get("identifier") or title)
-    out: list[tuple[str, str]] = []
-    for i, part in enumerate(parts, 1):
-        url = part["stream_url"].strip()
-        dur = part.get("duration") or tape.get("duration") or -1
-        try:
-            dur_f = float(dur)
-        except (TypeError, ValueError):
-            dur_f = -1
-        dur_s = -1 if dur_f <= 0 else int(round(dur_f))
-        part_title = label if len(parts) == 1 else f"{label} (part {i}/{len(parts)})"
-        vid = key if len(parts) == 1 else f"{key}#p{i}"
-        ext = attr_block(
-            **{
-                "tvg-id": vid,
-                "tvg-name": m3u_name(part_title),
-                "tvg-logo": logo,
-                "group-title": group,
+        extra.append(year)
+    label = f"{title} ({' · '.join(extra)})" if extra else title
+    if part_count > 1 and part_index is not None:
+        return f"{label} (part {part_index}/{part_count})"
+    return label
+
+
+def catalog_item(tape: dict, logo: str, part: dict, part_index: int, part_count: int) -> dict:
+    key = str(tape.get("key") or tape.get("identifier") or tape.get("title") or "tape")
+    if part_count > 1:
+        key = f"{key}#p{part_index}"
+    item = {
+        "id": key,
+        "channel_id": str(tape.get("channel_id") or ""),
+        "identifier": str(tape.get("identifier") or ""),
+        "title": tape_label(tape, part_index if part_count > 1 else None, part_count),
+        "show": str(tape.get("title") or "").strip(),
+        "episode": str(tape.get("episode") or "").strip(),
+        "year": str(tape.get("year") or "").strip(),
+        "duration": part["duration"],
+        "logo": logo,
+        "url": part["url"],
+    }
+    if part_count > 1:
+        item["part"] = part_index
+        item["parts"] = part_count
+    return item
+
+
+def collect_items(tapes: list[dict], logo_for, stats: dict) -> list[dict]:
+    """Playable parts for a shelf, one entry per unique archive.org URL."""
+    items: list[dict] = []
+    seen: set[str] = set()
+    for tape in tapes:
+        parts = playable_parts(tape)
+        if not parts:
+            stats["skipped_unplayable"] += 1
+            continue
+        stats["tapes"] += 1
+        logo = logo_for(str(tape.get("channel_id") or ""))
+        for i, part in enumerate(parts, 1):
+            if part["url"] in seen:
+                stats["deduped"] += 1
+                continue
+            seen.add(part["url"])
+            items.append(catalog_item(tape, logo, part, i, len(parts)))
+    return items
+
+
+def add_group(
+    groups: list[dict],
+    stats: dict,
+    gid: str,
+    title: str,
+    kind: str,
+    items: list[dict],
+    number: int = 0,
+    logo: str | None = None,
+) -> None:
+    if not items:
+        return
+    groups.append(
+        {
+            "id": catalog_id(gid),
+            "title": title,
+            "kind": kind,
+            "section": section_for(kind),
+            "number": number,
+            "logo": logo or logo_url(),
+            "items": items,
+        }
+    )
+    stats["entries"] += len(items)
+    stats["categories"] += 1
+    if kind != "new":
+        stats["channels_with_vod"] += 1
+
+
+def m3u_entry(item: dict, group: str) -> tuple[str, str]:
+    dur_s = item["duration"] if item.get("duration", -1) and item["duration"] > 0 else -1
+    ext = attr_block(
+        **{
+            "tvg-id": item.get("id") or item.get("url"),
+            "tvg-name": m3u_name(item.get("title") or "Untitled tape"),
+            "tvg-logo": item.get("logo") or logo_url(),
+            "group-title": group,
+        }
+    )
+    return f"#EXTINF:{dur_s}{ext},{m3u_name(item.get('title') or 'Untitled tape')}", item["url"]
+
+
+def write_ondemand_m3u_file(path: Path, groups: list[dict]) -> int:
+    lines = [
+        f'#EXTM3U url-tvg="{PUBLIC_BASE}/guide.xml"',
+        "#EXTENC:UTF-8",
+        "#PLAYLIST:SlamVision On Demand",
+        "# Full library. group-title matches the Android On Demand shelves: Just Added, years/eras, promotions, shows, and star channels.",
+    ]
+    for g in groups:
+        for item in g["items"]:
+            ext, url = m3u_entry(item, g["title"])
+            lines.append(ext)
+            lines.append(url)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return path.stat().st_size
+
+
+def write_ondemand_json(out: Path, groups: list[dict], generated_at: str) -> dict:
+    """Write ondemand/index.json plus one JSON file per category for incremental Roku loads."""
+    dest = out / "ondemand"
+    dest.mkdir(parents=True, exist_ok=True)
+    cat_bytes = 0
+    index_cats: list[dict] = []
+    for g in groups:
+        payload = {
+            "id": g["id"],
+            "title": g["title"],
+            "kind": g["kind"],
+            "section": g["section"],
+            "count": len(g["items"]),
+            "logo": g.get("logo") or logo_url(),
+            "items": g["items"],
+        }
+        path = dest / f"{g['id']}.json"
+        text = json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n"
+        path.write_text(text, encoding="utf-8")
+        cat_bytes += path.stat().st_size
+        index_cats.append(
+            {
+                "id": g["id"],
+                "title": g["title"],
+                "kind": g["kind"],
+                "section": g["section"],
+                "count": len(g["items"]),
+                "logo": g.get("logo") or logo_url(),
+                "url": f"{PUBLIC_BASE}/ondemand/{g['id']}.json",
             }
         )
-        out.append((f"#EXTINF:{dur_s}{ext},{m3u_name(part_title)}", url))
-    return out
+    index = {
+        "generated_at": generated_at,
+        "logo": logo_url(),
+        "m3u": f"{PUBLIC_BASE}/slamvision-ondemand.m3u",
+        "total_entries": sum(c["count"] for c in index_cats),
+        "categories": index_cats,
+    }
+    index_path = dest / "index.json"
+    index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    keep = {f"{g['id']}.json" for g in groups} | {"index.json"}
+    for path in dest.glob("*.json"):
+        if path.name not in keep:
+            path.unlink()
+    return {
+        "index_bytes": index_path.stat().st_size,
+        "category_bytes": cat_bytes,
+        "category_files": len(index_cats),
+        "index_url": f"{PUBLIC_BASE}/ondemand/index.json",
+        "groups": [{"id": c["id"], "title": c["title"], "section": c["section"], "count": c["count"]} for c in index_cats],
+    }
 
 
-def fetch_new_tapes(limit: int = 40) -> list[dict]:
+def write_ondemand_outputs(out: Path, groups: list[dict], stats: dict, generated_at: str | None = None) -> dict:
+    ts = generated_at or datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    stats["bytes"] = write_ondemand_m3u_file(out / "slamvision-ondemand.m3u", groups)
+    json_stats = write_ondemand_json(out, groups, ts)
+    stats.update(json_stats)
+    stats["json_bytes"] = json_stats["index_bytes"] + json_stats["category_bytes"]
+    return stats
+
+
+def fetch_new_tapes(limit: int = 40, use_network: bool = True) -> list[dict]:
+    cached = (CACHE_DIR / "_new.json") if CACHE_DIR else None
+
+    def from_payload(data: Any) -> list[dict] | None:
+        if isinstance(data, list):
+            return [t for t in data if isinstance(t, dict)]
+        if isinstance(data, dict):
+            return [t for t in (data.get("items") or []) if isinstance(t, dict)]
+        return None
+
+    if cached and cached.is_file():
+        age_ok = time.time() - cached.stat().st_mtime < CACHE_TTL
+        if age_ok or not use_network:
+            try:
+                parsed = from_payload(json.loads(cached.read_text(encoding="utf-8")))
+                if parsed is not None:
+                    return parsed
+            except (OSError, json.JSONDecodeError):
+                pass
+        if not use_network:
+            return []
+    if not use_network:
+        return []
     try:
         data = http_json(f"{API}/api/ondemand/new?limit={limit}")
     except Exception as e:  # noqa: BLE001
         log(f"  /ondemand/new failed: {e}")
+        if cached and cached.is_file():
+            try:
+                parsed = from_payload(json.loads(cached.read_text(encoding="utf-8")))
+                if parsed is not None:
+                    return parsed
+            except (OSError, json.JSONDecodeError):
+                pass
         return []
-    if isinstance(data, list):
-        return [t for t in data if isinstance(t, dict)]
-    if isinstance(data, dict):
-        return [t for t in (data.get("items") or []) if isinstance(t, dict)]
-    return []
+    tapes = from_payload(data) or []
+    if cached:
+        cached.write_text(json.dumps(data), encoding="utf-8")
+    return tapes
 
+
+def cached_channel_tapes(channel_id: str) -> list[dict]:
+    cache = CACHE_DIR
+    if not cache:
+        return []
+    folder = cache / urllib.parse.quote(channel_id, safe="")
+    if not folder.is_dir():
+        return []
+    pages = sorted(folder.glob("page-*.json"), key=lambda p: int(p.stem.split("-")[-1]))
+    tapes: list[dict] = []
+    for pf in pages:
+        try:
+            data = json.loads(pf.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        tapes.extend(it for it in (data.get("items") or []) if isinstance(it, dict))
+    return tapes
+
+
+def empty_vod_stats() -> dict:
+    return {
+        "entries": 0,
+        "tapes": 0,
+        "skipped_unplayable": 0,
+        "deduped": 0,
+        "channels_with_vod": 0,
+        "categories": 0,
+        "pages_fetched": 0,
+        "errors": [],
+    }
+
+
+def build_ondemand_groups(channels: list[dict], fetch: bool) -> tuple[list[dict], dict]:
+    """Build Android-style shelves: Just Added, then every live channel (years, promotions, shows, stars)."""
+    stats = empty_vod_stats()
+    groups: list[dict] = []
+
+    new_tapes = fetch_new_tapes(40, use_network=fetch)
+    if new_tapes:
+        items = collect_items(new_tapes, logo_url, stats)
+        add_group(groups, stats, "new", "New on SlamVision", "new", items, logo=logo_url())
+
+    for i, ch in enumerate(channels, 1):
+        cid = str(ch["id"])
+        name = display_name(ch)
+        kind = category_slug(ch.get("category"))
+        log(f"  On Demand {i}/{len(channels)} {name} ({cid})")
+        try:
+            tapes = iter_channel_tapes(cid) if fetch else cached_channel_tapes(cid)
+        except CircuitOpen as e:
+            log(f"    Circuit open: {e}. Writing what we have so far.")
+            stats["errors"].append(str(e))
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"    FAILED: {e}")
+            stats["errors"].append(f"{cid}: {e}")
+            continue
+        items = collect_items(tapes, lambda _tid, fallback=cid: logo_url(_tid or fallback), stats)
+        if items:
+            log(f"    {len(items)} playable (from {len(tapes)} listed)")
+        add_group(
+            groups,
+            stats,
+            cid,
+            name,
+            kind,
+            items,
+            number=int(ch.get("number") or 0),
+            logo=logo_url(cid),
+        )
+    return groups, stats
 
 
 def channels_from_m3u(path: Path) -> list[dict]:
@@ -523,120 +819,14 @@ def channels_from_m3u(path: Path) -> list[dict]:
 
 
 def write_ondemand_m3u_from_cache(path: Path, channels: list[dict]) -> dict:
-    """Assemble the VOD playlist from cached /api/ondemand pages only."""
-    lines = [
-        f'#EXTM3U url-tvg="{PUBLIC_BASE}/guide.xml"',
-        "#EXTENC:UTF-8",
-        "#PLAYLIST:SlamVision On Demand",
-        "# Built from cached On Demand pages. The GitHub Action fills this in gradually.",
-    ]
-    stats = {"entries": 0, "tapes": 0, "skipped_unplayable": 0, "channels_with_vod": 0, "errors": []}
-    logo = logo_url()
-    by_id = {str(c["id"]): c for c in channels}
-    cache = CACHE_DIR or (path.parent / ".cache" / "ondemand")
-    if not cache.is_dir():
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        return stats
-    # Prefer channel order from the live list; then any extra cache folders.
-    folder_ids = {urllib.parse.unquote(d.name) for d in cache.iterdir() if d.is_dir()}
-    ordered = [c for c in channels if c["id"] in folder_ids]
-    seen = {c["id"] for c in ordered}
-    for fid in sorted(folder_ids - seen):
-        ordered.append({"id": fid, "name": fid, "number": 0, "category": ""})
-    for ch in ordered:
-        cid = str(ch["id"])
-        name = display_name(ch)
-        folder = cache / urllib.parse.quote(cid, safe="")
-        pages = sorted(folder.glob("page-*.json"), key=lambda p: int(p.stem.split("-")[-1]))
-        tapes: list[dict] = []
-        for pf in pages:
-            try:
-                data = json.loads(pf.read_text(encoding="utf-8"))
-            except (OSError, json.JSONDecodeError):
-                continue
-            tapes.extend(it for it in (data.get("items") or []) if isinstance(it, dict))
-        wrote = 0
-        for tape in tapes:
-            entries = tape_entries(tape, name, logo)
-            if not entries:
-                stats["skipped_unplayable"] += 1
-                continue
-            stats["tapes"] += 1
-            for ext, url in entries:
-                lines.append(ext)
-                lines.append(url)
-                stats["entries"] += 1
-                wrote += 1
-        if wrote:
-            stats["channels_with_vod"] += 1
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    stats["bytes"] = path.stat().st_size
-    return stats
+    """Assemble the VOD playlist and JSON catalog from cached /api/ondemand pages only."""
+    groups, stats = build_ondemand_groups(channels, fetch=False)
+    return write_ondemand_outputs(path.parent, groups, stats)
 
 
 def write_ondemand_m3u(path: Path, channels: list[dict]) -> dict:
-    lines = [
-        f'#EXTM3U url-tvg="{PUBLIC_BASE}/guide.xml"',
-        "#EXTENC:UTF-8",
-        "#PLAYLIST:SlamVision On Demand",
-        "# Full On Demand library, grouped by channel. Tapes that appear on more than one channel are listed under each.",
-    ]
-    stats = {
-        "entries": 0,
-        "tapes": 0,
-        "skipped_unplayable": 0,
-        "channels_with_vod": 0,
-        "pages_fetched": 0,
-        "errors": [],
-    }
-    logo = logo_url()
-
-    new_tapes = fetch_new_tapes(40)
-    if new_tapes:
-        for tape in new_tapes:
-            entries = tape_entries(tape, "New on SlamVision", logo)
-            if not entries:
-                stats["skipped_unplayable"] += 1
-                continue
-            stats["tapes"] += 1
-            for ext, url in entries:
-                lines.append(ext)
-                lines.append(url)
-                stats["entries"] += 1
-
-    for i, ch in enumerate(channels, 1):
-        cid = str(ch["id"])
-        name = display_name(ch)
-        group = name
-        log(f"  On Demand {i}/{len(channels)} {name} ({cid})")
-        try:
-            tapes = iter_channel_tapes(cid)
-        except CircuitOpen as e:
-            log(f"    Circuit open: {e}. Writing what we have so far.")
-            stats["errors"].append(str(e))
-            break
-        except Exception as e:  # noqa: BLE001
-            log(f"    FAILED: {e}")
-            stats["errors"].append(f"{cid}: {e}")
-            continue
-        wrote = 0
-        for tape in tapes:
-            entries = tape_entries(tape, group, logo)
-            if not entries:
-                stats["skipped_unplayable"] += 1
-                continue
-            stats["tapes"] += 1
-            for ext, url in entries:
-                lines.append(ext)
-                lines.append(url)
-                stats["entries"] += 1
-                wrote += 1
-        if wrote:
-            stats["channels_with_vod"] += 1
-
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    stats["bytes"] = path.stat().st_size
-    return stats
+    groups, stats = build_ondemand_groups(channels, fetch=True)
+    return write_ondemand_outputs(path.parent, groups, stats)
 
 
 def vod_is_stale(path: Path, hours: float) -> bool:
@@ -649,8 +839,12 @@ def vod_is_stale(path: Path, hours: float) -> bool:
 def write_index(path: Path, meta: dict) -> None:
     live_url = f"{PUBLIC_BASE}/slamvision.m3u"
     vod_url = f"{PUBLIC_BASE}/slamvision-ondemand.m3u"
+    vod_index_url = f"{PUBLIC_BASE}/ondemand/index.json"
     guide_url = f"{PUBLIC_BASE}/guide.xml"
     updated = meta.get("generated_at") or ""
+    vod = meta.get("vod") or {}
+    vod_entries = vod.get("entries", "?")
+    vod_cats = vod.get("categories", "?")
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -677,8 +871,10 @@ def write_index(path: Path, meta: dict) -> None:
     <pre>{xml_esc(live_url)}</pre>
     <p>TV guide (next 12 hours):</p>
     <pre>{xml_esc(guide_url)}</pre>
-    <p>On Demand library:</p>
+    <p>On Demand library ({xml_esc(str(vod_entries))} titles in {xml_esc(str(vod_cats))} shelves):</p>
     <pre>{xml_esc(vod_url)}</pre>
+    <p>On Demand JSON index (one file per shelf, for players that load a category at a time):</p>
+    <pre>{xml_esc(vod_index_url)}</pre>
     <p>On a Roku, install <strong>IPTV Smart Player Lite</strong>, add a playlist, and paste the live playlist URL. Use the Roku mobile app keyboard so you can paste. If the guide is empty, add the guide URL in the app’s EPG settings. Add the On Demand URL as a second playlist.</p>
     <p class="mute">The full SlamVision app, with a real live guide that joins mid-show, is on Android TV and Fire TV. In Downloader, delete any old SlamVision .apk in Files, then enter code 3059600.</p>
     <p class="mute"><a href="https://github.com/jhatren927-ai/slamvision-iptv">GitHub</a> · <a href="https://ring-channel-tv.emergent.host/">SlamVision</a></p>
@@ -726,7 +922,11 @@ def main() -> int:
         channels = channels_from_m3u(live_existing)
         set_cache_dir(out / ".cache" / "ondemand")
         vod_stats = write_ondemand_m3u_from_cache(out / "slamvision-ondemand.m3u", channels)
-        log(f"On Demand from cache: {vod_stats['entries']} entries")
+        log(
+            f"On Demand from cache: {vod_stats['entries']} entries in "
+            f"{vod_stats.get('categories', 0)} shelves, {vod_stats.get('bytes', 0)} bytes "
+            f"(JSON {vod_stats.get('json_bytes', 0)} bytes)"
+        )
         return 0
 
     log("Health-checking the SlamVision API…")
@@ -759,7 +959,11 @@ def main() -> int:
     if do_vod:
         log("Building On Demand playlist (this can take a few minutes)…")
         vod_stats = write_ondemand_m3u(vod_path, channels)
-        log(f"On Demand: {vod_stats['entries']} entries from {vod_stats['tapes']} tapes, {vod_stats['bytes']} bytes")
+        log(
+            f"On Demand: {vod_stats['entries']} entries from {vod_stats['tapes']} tapes "
+            f"in {vod_stats.get('categories', 0)} shelves, {vod_stats.get('bytes', 0)} bytes "
+            f"(JSON {vod_stats.get('json_bytes', 0)} bytes)"
+        )
         if vod_stats["errors"]:
             log("  errors: " + "; ".join(vod_stats["errors"][:10]))
     elif vod_path.is_file():

@@ -241,6 +241,40 @@ def main() -> int:
     else:
         issues.append("slamvision-ondemand.m3u missing")
 
+    index_path = d / "ondemand" / "index.json"
+    if index_path.is_file():
+        try:
+            index = json.loads(index_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            issues.append(f"ondemand/index.json is not valid JSON: {e}")
+        else:
+            cats = index.get("categories") or []
+            print(f"VOD JSON shelves: {len(cats)}, total_entries: {index.get('total_entries')}")
+            if not cats:
+                issues.append("ondemand/index.json has no categories")
+            for cat in cats:
+                cid = cat.get("id") or ""
+                cpath = d / "ondemand" / f"{cid}.json"
+                if not cid:
+                    issues.append("ondemand category missing id")
+                    continue
+                if not cpath.is_file():
+                    issues.append(f"missing ondemand/{cid}.json")
+                    continue
+                try:
+                    body = json.loads(cpath.read_text(encoding="utf-8"))
+                except json.JSONDecodeError as e:
+                    issues.append(f"ondemand/{cid}.json is not valid JSON: {e}")
+                    continue
+                items = body.get("items") or []
+                if int(cat.get("count") or 0) != len(items):
+                    issues.append(f"ondemand/{cid}.json count {cat.get('count')} != {len(items)} items")
+                missing_url = sum(1 for it in items if not (isinstance(it, dict) and str(it.get("url") or "").startswith("http")))
+                if missing_url:
+                    issues.append(f"ondemand/{cid}.json has {missing_url} items without an http url")
+    elif vod:
+        issues.append("ondemand/index.json missing")
+
     live_ids = {e["attrs"].get("tvg-id") for e in live}
     unused_guide = sorted(guide_channels - live_ids)
     # channels in the guide but not the playlist (no current stream) are worth noting, not failing

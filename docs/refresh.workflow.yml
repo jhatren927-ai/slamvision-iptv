@@ -49,6 +49,12 @@ jobs:
             tar -xzf cache-ondemand.tar.gz -C output/.cache || true
             rm -f cache-ondemand.tar.gz
           fi
+          # Restore the split On Demand JSON catalog so --vod never keeps it.
+          git checkout origin/gh-pages -- ondemand 2>/dev/null || true
+          if [ -d ondemand ]; then
+            rm -rf output/ondemand
+            mv ondemand output/ondemand
+          fi
 
       - name: Generate feeds
         id: gen
@@ -94,6 +100,9 @@ jobs:
           git add -f slamvision.m3u slamvision-ondemand.m3u guide.xml logo.png index.html build.json
           if [ -f cache-ondemand.tar.gz ]; then
             git add -f cache-ondemand.tar.gz
+          fi
+          if [ -d ondemand ]; then
+            git add -f ondemand
           fi
           git commit -m "Refresh SlamVision IPTV feeds"
           git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
