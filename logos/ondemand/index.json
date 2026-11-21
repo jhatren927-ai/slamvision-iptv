@@ -1,0 +1,1088 @@
+{
+  "generated_at": "2026-11-21 03:56 UTC",
+  "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logo.png",
+  "m3u": "https://jhatren927-ai.github.io/slamvision-iptv/slamvision-ondemand.m3u",
+  "total_entries": 33542,
+  "categories": [
+    {
+      "id": "new",
+      "title": "New on SlamVision",
+      "kind": "new",
+      "section": "Just Added",
+      "count": 43,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logo.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/new.json"
+    },
+    {
+      "id": "year-1985",
+      "title": "Wrestling in 1985",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 221,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1985.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1985.json"
+    },
+    {
+      "id": "year-1986",
+      "title": "Wrestling in 1986",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 214,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1986.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1986.json"
+    },
+    {
+      "id": "year-1987",
+      "title": "Wrestling in 1987",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 119,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1987.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1987.json"
+    },
+    {
+      "id": "year-1988",
+      "title": "Wrestling in 1988",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 114,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1988.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1988.json"
+    },
+    {
+      "id": "year-1989",
+      "title": "Wrestling in 1989",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 148,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1989.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1989.json"
+    },
+    {
+      "id": "year-1990",
+      "title": "Wrestling in 1990",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 400,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1990.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1990.json"
+    },
+    {
+      "id": "year-1991",
+      "title": "Wrestling in 1991",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 475,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1991.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1991.json"
+    },
+    {
+      "id": "year-1992",
+      "title": "Wrestling in 1992",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 544,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1992.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1992.json"
+    },
+    {
+      "id": "year-1993",
+      "title": "Wrestling in 1993",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 692,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1993.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1993.json"
+    },
+    {
+      "id": "year-1994",
+      "title": "Wrestling in 1994",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 487,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1994.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1994.json"
+    },
+    {
+      "id": "year-1995",
+      "title": "Wrestling in 1995",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 689,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1995.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1995.json"
+    },
+    {
+      "id": "year-1996",
+      "title": "Wrestling in 1996",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 701,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1996.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1996.json"
+    },
+    {
+      "id": "year-1997",
+      "title": "Wrestling in 1997",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 712,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1997.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1997.json"
+    },
+    {
+      "id": "year-1998",
+      "title": "Wrestling in 1998",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 462,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1998.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1998.json"
+    },
+    {
+      "id": "year-1999",
+      "title": "Wrestling in 1999",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 862,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1999.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-1999.json"
+    },
+    {
+      "id": "year-2000",
+      "title": "Wrestling in 2000",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 624,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-2000.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-2000.json"
+    },
+    {
+      "id": "year-2001",
+      "title": "Wrestling in 2001",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 414,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/year-2001.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/year-2001.json"
+    },
+    {
+      "id": "aew-tv",
+      "title": "All Elite Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 35,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/aew-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/aew-tv.json"
+    },
+    {
+      "id": "aew-elevation",
+      "title": "AEW Dark Elevation",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 114,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/aew-elevation.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/aew-elevation.json"
+    },
+    {
+      "id": "aew-rampage",
+      "title": "AEW Rampage",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 40,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/aew-rampage.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/aew-rampage.json"
+    },
+    {
+      "id": "aew2",
+      "title": "ALL ELITE WRESTLING DYNAMITE",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 83,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/aew2.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/aew2.json"
+    },
+    {
+      "id": "ajpw",
+      "title": "All Japan Pro-Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 1060,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw.json"
+    },
+    {
+      "id": "ajpw-carnival",
+      "title": "AJPW Champion Carnival",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 142,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-carnival.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-carnival.json"
+    },
+    {
+      "id": "ajpw-dynamite",
+      "title": "AJPW Dynamite Series",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 34,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-dynamite.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-dynamite.json"
+    },
+    {
+      "id": "ajpw-excite",
+      "title": "AJPW Excite Series",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 36,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-excite.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-excite.json"
+    },
+    {
+      "id": "ajpw-series",
+      "title": "AJPW New Year Giant Series",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 56,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-series.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-series.json"
+    },
+    {
+      "id": "ajpw-tagleague",
+      "title": "AJPW Real World Tag League",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 66,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-tagleague.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-tagleague.json"
+    },
+    {
+      "id": "ajpw-summer",
+      "title": "AJPW Summer Action Series",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 70,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-summer.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ajpw-summer.json"
+    },
+    {
+      "id": "atg",
+      "title": "Andre The Giant",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 12,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/atg.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/atg.json"
+    },
+    {
+      "id": "ain",
+      "title": "Antonio Inoki Network",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 166,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ain.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ain.json"
+    },
+    {
+      "id": "awa",
+      "title": "American Wrestling Association",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 52,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/awa.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/awa.json"
+    },
+    {
+      "id": "battlarts",
+      "title": "BattlArts",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 144,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/battlarts.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/battlarts.json"
+    },
+    {
+      "id": "big-japan",
+      "title": "Big Japan Pro Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 511,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/big-japan.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/big-japan.json"
+    },
+    {
+      "id": "bsn",
+      "title": "Bloodsport Network",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 19,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/bsn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/bsn.json"
+    },
+    {
+      "id": "chi",
+      "title": "Chikara",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 17,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/chi.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/chi.json"
+    },
+    {
+      "id": "czw-tv",
+      "title": "Combat Zone Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 290,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/czw-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/czw-tv.json"
+    },
+    {
+      "id": "ddt-pro",
+      "title": "DDT Pro-Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 174,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ddt-pro.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ddt-pro.json"
+    },
+    {
+      "id": "death",
+      "title": "Deathmatch",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 597,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/death.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/death.json"
+    },
+    {
+      "id": "dgtv",
+      "title": "Dragongate",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 316,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/dgtv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/dgtv.json"
+    },
+    {
+      "id": "ecw-tv",
+      "title": "Extreme Championship Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 380,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ecw-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ecw-tv.json"
+    },
+    {
+      "id": "ecw-hardcoretv",
+      "title": "ECW Hardcore TV",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 169,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ecw-hardcoretv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ecw-hardcoretv.json"
+    },
+    {
+      "id": "euromat",
+      "title": "EuroMat",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 240,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/euromat.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/euromat.json"
+    },
+    {
+      "id": "fmw",
+      "title": "Frontier Martial-Arts Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 136,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/fmw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/fmw.json"
+    },
+    {
+      "id": "gcw-tv",
+      "title": "Game Changer Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 232,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/gcw-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/gcw-tv.json"
+    },
+    {
+      "id": "jcw",
+      "title": "Juggalo Championship Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 114,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logo.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/jcw.json"
+    },
+    {
+      "id": "cena",
+      "title": "John Cena",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 45,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/cena.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/cena.json"
+    },
+    {
+      "id": "joshi-indies",
+      "title": "Joshi Indies",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 664,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/joshi-indies.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/joshi-indies.json"
+    },
+    {
+      "id": "joshi",
+      "title": "Joshi Puroresu",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 532,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/joshi.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/joshi.json"
+    },
+    {
+      "id": "kaientai-dojo",
+      "title": "Kaientai Dojo",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 13,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/kaientai-dojo.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/kaientai-dojo.json"
+    },
+    {
+      "id": "omega-24-7",
+      "title": "Kenny Omega",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 52,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/omega-24-7.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/omega-24-7.json"
+    },
+    {
+      "id": "100-lucha",
+      "title": "Lucha Libre",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 380,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/100-lucha.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/100-lucha.json"
+    },
+    {
+      "id": "marigold",
+      "title": "Marigold",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 321,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/marigold.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/marigold.json"
+    },
+    {
+      "id": "memphis",
+      "title": "Memphis Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 569,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/memphis.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/memphis.json"
+    },
+    {
+      "id": "michinoku-pro",
+      "title": "Michinoku Pro Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 209,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/michinoku-pro.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/michinoku-pro.json"
+    },
+    {
+      "id": "midsouth",
+      "title": "Mid-South Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 846,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/midsouth.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/midsouth.json"
+    },
+    {
+      "id": "mlw",
+      "title": "Major League Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 120,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/mlw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/mlw.json"
+    },
+    {
+      "id": "mnw",
+      "title": "Monday night wars",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 97,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/mnw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/mnw.json"
+    },
+    {
+      "id": "njpw",
+      "title": "New Japan Pro-Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 1339,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw.json"
+    },
+    {
+      "id": "njpw-destructi",
+      "title": "NJPW Destruction",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 30,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-destructi.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-destructi.json"
+    },
+    {
+      "id": "njpw-fighting",
+      "title": "NJPW Fighting Spirit",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 60,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logo.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-fighting.json"
+    },
+    {
+      "id": "njpw-g1climax",
+      "title": "NJPW G1 Climax",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 261,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-g1climax.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-g1climax.json"
+    },
+    {
+      "id": "njpw-japan",
+      "title": "NJPW New Japan Cup",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 46,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logo.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-japan.json"
+    },
+    {
+      "id": "njpw-starrcade",
+      "title": "NJPW Starrcade in Tokyo Dome",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 72,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-starrcade.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-starrcade.json"
+    },
+    {
+      "id": "njpw-wp",
+      "title": "NJPW World Pro-Wrestling",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 208,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wp.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-wp.json"
+    },
+    {
+      "id": "njpw-wk",
+      "title": "NJPW Wrestle Kingdom",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 241,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wk.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-wk.json"
+    },
+    {
+      "id": "njpw-wrestling",
+      "title": "NJPW Wrestling Dontaku",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 51,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wrestling.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/njpw-wrestling.json"
+    },
+    {
+      "id": "noah-tv",
+      "title": "NOAH-TV",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 1265,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/noah-tv.json"
+    },
+    {
+      "id": "noah-voyage",
+      "title": "NOAH Great Voyage",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 28,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-voyage.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/noah-voyage.json"
+    },
+    {
+      "id": "noah-n1victory",
+      "title": "NOAH N-1 Victory",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 76,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-n1victory.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/noah-n1victory.json"
+    },
+    {
+      "id": "noah-navigatio",
+      "title": "NOAH Navigation",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 154,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-navigatio.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/noah-navigatio.json"
+    },
+    {
+      "id": "nwa-crockett",
+      "title": "NWA Crockett",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 118,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/nwa-crockett.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/nwa-crockett.json"
+    },
+    {
+      "id": "osaka-pro",
+      "title": "Osaka Pro Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 172,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/osaka-pro.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/osaka-pro.json"
+    },
+    {
+      "id": "pwg",
+      "title": "Pro Wrestling Guerrilla",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 108,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/pwg.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/pwg.json"
+    },
+    {
+      "id": "rndm",
+      "title": "Surprise TV",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 2123,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/rndm.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/rndm.json"
+    },
+    {
+      "id": "revpro",
+      "title": "Revolution Pro Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 197,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/revpro.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/revpro.json"
+    },
+    {
+      "id": "piper",
+      "title": "Roddy Piper",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 16,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/piper.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/piper.json"
+    },
+    {
+      "id": "croh",
+      "title": "Classic ROH",
+      "kind": "eras",
+      "section": "Shows & Eras",
+      "count": 359,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/croh.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/croh.json"
+    },
+    {
+      "id": "roh-wrestling",
+      "title": "ROH Wrestling",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 69,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/roh-wrestling.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/roh-wrestling.json"
+    },
+    {
+      "id": "si-tv",
+      "title": "Shoot Interviews",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 47,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/si-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/si-tv.json"
+    },
+    {
+      "id": "st-tv",
+      "title": "SMW TV",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 206,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/st-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/st-tv.json"
+    },
+    {
+      "id": "sh-tv",
+      "title": "Stan Hansen",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 44,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/sh-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/sh-tv.json"
+    },
+    {
+      "id": "star",
+      "title": "Stardom",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 719,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/star.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/star.json"
+    },
+    {
+      "id": "stardom-5star",
+      "title": "Stardom 5Star Grand Prix",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 106,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-5star.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/stardom-5star.json"
+    },
+    {
+      "id": "stardom-cinder",
+      "title": "Stardom Cinderella Tournament",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 27,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-cinder.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/stardom-cinder.json"
+    },
+    {
+      "id": "stardom-goddes",
+      "title": "Stardom Goddesses of Stardom",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 89,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-goddes.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/stardom-goddes.json"
+    },
+    {
+      "id": "tbn",
+      "title": "The Baba Network",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 21,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/tbn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/tbn.json"
+    },
+    {
+      "id": "muta",
+      "title": "The Great Muta",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 48,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/muta.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/muta.json"
+    },
+    {
+      "id": "hart",
+      "title": "The Hart Family",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 38,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/hart.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/hart.json"
+    },
+    {
+      "id": "hhn",
+      "title": "The Hulk Hogan Network",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 57,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/hhn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/hhn.json"
+    },
+    {
+      "id": "tsn",
+      "title": "The Shoot Network",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 756,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/tsn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/tsn.json"
+    },
+    {
+      "id": "tjpw-tv",
+      "title": "TJPW",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 94,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/tjpw-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/tjpw-tv.json"
+    },
+    {
+      "id": "tna",
+      "title": "Total Nonstop Action Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 843,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/tna.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/tna.json"
+    },
+    {
+      "id": "ut-tv",
+      "title": "USWA TV",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 113,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ut-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ut-tv.json"
+    },
+    {
+      "id": "ve-tv",
+      "title": "Von Erich",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 33,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/ve-tv.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/ve-tv.json"
+    },
+    {
+      "id": "wcpw",
+      "title": "What Culture Pro Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 94,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcpw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcpw.json"
+    },
+    {
+      "id": "wcw",
+      "title": "World Championship Wrestling",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 944,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw.json"
+    },
+    {
+      "id": "wcw-cotc",
+      "title": "WCW Clash of the Champions",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 74,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-cotc.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-cotc.json"
+    },
+    {
+      "id": "wcw-fallbrawl",
+      "title": "WCW Fall Brawl",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 26,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-fallbrawl.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-fallbrawl.json"
+    },
+    {
+      "id": "wcw-bash",
+      "title": "WCW Great American Bash",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 20,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-bash.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-bash.json"
+    },
+    {
+      "id": "wcw-halloween",
+      "title": "WCW Halloween Havoc",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 29,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-halloween.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-halloween.json"
+    },
+    {
+      "id": "wcw-mainevent",
+      "title": "WCW Main Event",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 195,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-mainevent.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-mainevent.json"
+    },
+    {
+      "id": "wcw-mn",
+      "title": "WCW Monday Nitro",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 144,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-mn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-mn.json"
+    },
+    {
+      "id": "wcw-powerhour",
+      "title": "WCW Power Hour",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 203,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-powerhour.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-powerhour.json"
+    },
+    {
+      "id": "wcw-prime",
+      "title": "WCW Prime",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 55,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-prime.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-prime.json"
+    },
+    {
+      "id": "wcw-pw",
+      "title": "WCW Pro Wrestling",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 299,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-pw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-pw.json"
+    },
+    {
+      "id": "wcw-sn",
+      "title": "WCW Saturday Night",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 490,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-sn.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-sn.json"
+    },
+    {
+      "id": "wcw-starrcade",
+      "title": "WCW Starrcade in Tokyo Dome",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 33,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-starrcade.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-starrcade.json"
+    },
+    {
+      "id": "wcw-superbrawl",
+      "title": "WCW SuperBrawl",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 26,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-superbrawl.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-superbrawl.json"
+    },
+    {
+      "id": "wcw-worldwide",
+      "title": "WCW Worldwide",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 399,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-worldwide.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wcw-worldwide.json"
+    },
+    {
+      "id": "wm",
+      "title": "Wrestlemania",
+      "kind": "wrestlers",
+      "section": "Star Channels",
+      "count": 25,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wm.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wm.json"
+    },
+    {
+      "id": "wwe",
+      "title": "WWE",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 1109,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwe.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwe.json"
+    },
+    {
+      "id": "wwe-velocity",
+      "title": "WWE Velocity",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 311,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwe-velocity.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwe-velocity.json"
+    },
+    {
+      "id": "wwf",
+      "title": "WWF",
+      "kind": "promotions",
+      "section": "Promotions",
+      "count": 480,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf.json"
+    },
+    {
+      "id": "wwf-90-00",
+      "title": "WWF 1990-2000",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 904,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-90-00.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-90-00.json"
+    },
+    {
+      "id": "wwf-ptw",
+      "title": "WWF Prime Time Wrestling",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 83,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-ptw.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-ptw.json"
+    },
+    {
+      "id": "wwf-heat",
+      "title": "WWF Sunday Night Heat",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 81,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-heat.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-heat.json"
+    },
+    {
+      "id": "wwf-sow",
+      "title": "WWF Superstars of Wrestling",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 53,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-sow.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-sow.json"
+    },
+    {
+      "id": "wwf-mania",
+      "title": "WWF WrestleMania",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 40,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-mania.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-mania.json"
+    },
+    {
+      "id": "wwf-challenge",
+      "title": "WWF Wrestling Challenge",
+      "kind": "shows",
+      "section": "Shows & Eras",
+      "count": 117,
+      "logo": "https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-challenge.png",
+      "url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/wwf-challenge.json"
+    }
+  ]
+}
