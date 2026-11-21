@@ -91,7 +91,8 @@ jobs:
           git checkout -b gh-pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f slamvision.m3u slamvision-ondemand.m3u guide.xml logo.png index.html build.json
+          cp ../static/site/*.html .
+          git add -f slamvision.m3u slamvision-ondemand.m3u guide.xml logo.png index.html build.json privacy.html about.html terms.html
           if [ -f cache-ondemand.tar.gz ]; then
             git add -f cache-ondemand.tar.gz
           fi
