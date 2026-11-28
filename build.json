@@ -1,0 +1,716 @@
+{
+  "generated_at": "2026-11-28 07:38 UTC",
+  "api": "https://ring-channel-tv.emergent.host",
+  "public_base": "https://jhatren927-ai.github.io/slamvision-iptv",
+  "live_channels": 158,
+  "listed_channels": 159,
+  "missing_live": [
+    "156 wwf-wrestling"
+  ],
+  "guide": {
+    "programmes": 1989,
+    "skipped": 0,
+    "window_start": "2026-11-28T07:30:00Z",
+    "window_end": "2026-11-28T19:30:00Z",
+    "server_time": "2026-11-28T07:37:02.102905Z",
+    "hours": 12,
+    "hours_note": "The site API caps /api/guide at 12 hours (24 returns 422)."
+  },
+  "vod": {
+    "entries": 33152,
+    "tapes": 30539,
+    "skipped_unplayable": 0,
+    "deduped": 1746,
+    "channels_with_vod": 112,
+    "categories": 113,
+    "pages_fetched": 0,
+    "errors": [],
+    "bytes": 14503169,
+    "index_bytes": 36474,
+    "category_bytes": 17186451,
+    "category_files": 113,
+    "index_url": "https://jhatren927-ai.github.io/slamvision-iptv/ondemand/index.json",
+    "groups": [
+      {
+        "id": "new",
+        "title": "New on SlamVision",
+        "section": "Just Added",
+        "count": 43
+      },
+      {
+        "id": "year-1985",
+        "title": "Wrestling in 1985",
+        "section": "Shows & Eras",
+        "count": 221
+      },
+      {
+        "id": "year-1986",
+        "title": "Wrestling in 1986",
+        "section": "Shows & Eras",
+        "count": 214
+      },
+      {
+        "id": "year-1987",
+        "title": "Wrestling in 1987",
+        "section": "Shows & Eras",
+        "count": 119
+      },
+      {
+        "id": "year-1988",
+        "title": "Wrestling in 1988",
+        "section": "Shows & Eras",
+        "count": 114
+      },
+      {
+        "id": "year-1989",
+        "title": "Wrestling in 1989",
+        "section": "Shows & Eras",
+        "count": 148
+      },
+      {
+        "id": "year-1990",
+        "title": "Wrestling in 1990",
+        "section": "Shows & Eras",
+        "count": 400
+      },
+      {
+        "id": "year-1991",
+        "title": "Wrestling in 1991",
+        "section": "Shows & Eras",
+        "count": 475
+      },
+      {
+        "id": "year-1992",
+        "title": "Wrestling in 1992",
+        "section": "Shows & Eras",
+        "count": 544
+      },
+      {
+        "id": "year-1993",
+        "title": "Wrestling in 1993",
+        "section": "Shows & Eras",
+        "count": 692
+      },
+      {
+        "id": "year-1994",
+        "title": "Wrestling in 1994",
+        "section": "Shows & Eras",
+        "count": 487
+      },
+      {
+        "id": "year-1995",
+        "title": "Wrestling in 1995",
+        "section": "Shows & Eras",
+        "count": 689
+      },
+      {
+        "id": "year-1996",
+        "title": "Wrestling in 1996",
+        "section": "Shows & Eras",
+        "count": 701
+      },
+      {
+        "id": "year-1997",
+        "title": "Wrestling in 1997",
+        "section": "Shows & Eras",
+        "count": 712
+      },
+      {
+        "id": "year-1998",
+        "title": "Wrestling in 1998",
+        "section": "Shows & Eras",
+        "count": 462
+      },
+      {
+        "id": "year-1999",
+        "title": "Wrestling in 1999",
+        "section": "Shows & Eras",
+        "count": 862
+      },
+      {
+        "id": "year-2000",
+        "title": "Wrestling in 2000",
+        "section": "Shows & Eras",
+        "count": 624
+      },
+      {
+        "id": "year-2001",
+        "title": "Wrestling in 2001",
+        "section": "Shows & Eras",
+        "count": 414
+      },
+      {
+        "id": "aew-elevation",
+        "title": "AEW Dark Elevation",
+        "section": "Shows & Eras",
+        "count": 114
+      },
+      {
+        "id": "aew-rampage",
+        "title": "AEW Rampage",
+        "section": "Shows & Eras",
+        "count": 40
+      },
+      {
+        "id": "ajpw",
+        "title": "All Japan Pro-Wrestling",
+        "section": "Promotions",
+        "count": 1060
+      },
+      {
+        "id": "ajpw-carnival",
+        "title": "AJPW Champion Carnival",
+        "section": "Shows & Eras",
+        "count": 142
+      },
+      {
+        "id": "ajpw-dynamite",
+        "title": "AJPW Dynamite Series",
+        "section": "Shows & Eras",
+        "count": 34
+      },
+      {
+        "id": "ajpw-excite",
+        "title": "AJPW Excite Series",
+        "section": "Shows & Eras",
+        "count": 36
+      },
+      {
+        "id": "ajpw-series",
+        "title": "AJPW New Year Giant Series",
+        "section": "Shows & Eras",
+        "count": 56
+      },
+      {
+        "id": "ajpw-tagleague",
+        "title": "AJPW Real World Tag League",
+        "section": "Shows & Eras",
+        "count": 66
+      },
+      {
+        "id": "ajpw-summer",
+        "title": "AJPW Summer Action Series",
+        "section": "Shows & Eras",
+        "count": 70
+      },
+      {
+        "id": "ain",
+        "title": "Antonio Inoki Network",
+        "section": "Star Channels",
+        "count": 166
+      },
+      {
+        "id": "awa",
+        "title": "American Wrestling Association",
+        "section": "Promotions",
+        "count": 52
+      },
+      {
+        "id": "battlarts",
+        "title": "BattlArts",
+        "section": "Promotions",
+        "count": 144
+      },
+      {
+        "id": "big-japan",
+        "title": "Big Japan Pro Wrestling",
+        "section": "Promotions",
+        "count": 511
+      },
+      {
+        "id": "bsn",
+        "title": "Bloodsport Network",
+        "section": "Promotions",
+        "count": 19
+      },
+      {
+        "id": "chi",
+        "title": "Chikara",
+        "section": "Promotions",
+        "count": 17
+      },
+      {
+        "id": "czw-tv",
+        "title": "Combat Zone Wrestling",
+        "section": "Promotions",
+        "count": 290
+      },
+      {
+        "id": "ddt-pro",
+        "title": "DDT Pro-Wrestling",
+        "section": "Promotions",
+        "count": 174
+      },
+      {
+        "id": "death",
+        "title": "Deathmatch",
+        "section": "Star Channels",
+        "count": 597
+      },
+      {
+        "id": "dgtv",
+        "title": "Dragongate",
+        "section": "Promotions",
+        "count": 316
+      },
+      {
+        "id": "ecw-tv",
+        "title": "Extreme Championship Wrestling",
+        "section": "Promotions",
+        "count": 380
+      },
+      {
+        "id": "ecw-hardcoretv",
+        "title": "ECW Hardcore TV",
+        "section": "Shows & Eras",
+        "count": 169
+      },
+      {
+        "id": "euromat",
+        "title": "EuroMat",
+        "section": "Star Channels",
+        "count": 240
+      },
+      {
+        "id": "fmw",
+        "title": "Frontier Martial-Arts Wrestling",
+        "section": "Promotions",
+        "count": 136
+      },
+      {
+        "id": "gcw-tv",
+        "title": "Game Changer Wrestling",
+        "section": "Promotions",
+        "count": 232
+      },
+      {
+        "id": "jcw",
+        "title": "Juggalo Championship Wrestling",
+        "section": "Promotions",
+        "count": 114
+      },
+      {
+        "id": "nwa-crockett",
+        "title": "Jim Crockett Network",
+        "section": "Promotions",
+        "count": 118
+      },
+      {
+        "id": "cena",
+        "title": "John Cena",
+        "section": "Star Channels",
+        "count": 45
+      },
+      {
+        "id": "joshi-indies",
+        "title": "Joshi Indies",
+        "section": "Promotions",
+        "count": 664
+      },
+      {
+        "id": "joshi",
+        "title": "Joshi Puroresu",
+        "section": "Promotions",
+        "count": 532
+      },
+      {
+        "id": "kaientai-dojo",
+        "title": "Kaientai Dojo",
+        "section": "Promotions",
+        "count": 13
+      },
+      {
+        "id": "omega-24-7",
+        "title": "Kenny Omega",
+        "section": "Star Channels",
+        "count": 52
+      },
+      {
+        "id": "100-lucha",
+        "title": "Lucha Libre",
+        "section": "Promotions",
+        "count": 380
+      },
+      {
+        "id": "marigold",
+        "title": "Marigold",
+        "section": "Promotions",
+        "count": 321
+      },
+      {
+        "id": "memphis",
+        "title": "Memphis Wrestling",
+        "section": "Promotions",
+        "count": 569
+      },
+      {
+        "id": "michinoku-pro",
+        "title": "Michinoku Pro Wrestling",
+        "section": "Promotions",
+        "count": 209
+      },
+      {
+        "id": "midsouth",
+        "title": "Mid-South Wrestling",
+        "section": "Promotions",
+        "count": 846
+      },
+      {
+        "id": "mlw",
+        "title": "Major League Wrestling",
+        "section": "Promotions",
+        "count": 120
+      },
+      {
+        "id": "njpw",
+        "title": "New Japan Pro-Wrestling",
+        "section": "Promotions",
+        "count": 1339
+      },
+      {
+        "id": "njpw-destructi",
+        "title": "NJPW Destruction",
+        "section": "Shows & Eras",
+        "count": 30
+      },
+      {
+        "id": "njpw-fighting",
+        "title": "NJPW Fighting Spirit",
+        "section": "Shows & Eras",
+        "count": 60
+      },
+      {
+        "id": "njpw-g1climax",
+        "title": "NJPW G1 Climax",
+        "section": "Shows & Eras",
+        "count": 261
+      },
+      {
+        "id": "njpw-japan",
+        "title": "NJPW New Japan Cup",
+        "section": "Shows & Eras",
+        "count": 46
+      },
+      {
+        "id": "njpw-wp",
+        "title": "NJPW World Pro-Wrestling",
+        "section": "Shows & Eras",
+        "count": 208
+      },
+      {
+        "id": "njpw-wk",
+        "title": "NJPW Wrestle Kingdom",
+        "section": "Shows & Eras",
+        "count": 241
+      },
+      {
+        "id": "njpw-wrestling",
+        "title": "NJPW Wrestling Dontaku",
+        "section": "Shows & Eras",
+        "count": 51
+      },
+      {
+        "id": "noah-tv",
+        "title": "NOAH-TV",
+        "section": "Promotions",
+        "count": 1265
+      },
+      {
+        "id": "noah-voyage",
+        "title": "NOAH Great Voyage",
+        "section": "Shows & Eras",
+        "count": 28
+      },
+      {
+        "id": "noah-n1victory",
+        "title": "NOAH N-1 Victory",
+        "section": "Shows & Eras",
+        "count": 76
+      },
+      {
+        "id": "noah-navigatio",
+        "title": "NOAH Navigation",
+        "section": "Shows & Eras",
+        "count": 154
+      },
+      {
+        "id": "osaka-pro",
+        "title": "Osaka Pro Wrestling",
+        "section": "Promotions",
+        "count": 172
+      },
+      {
+        "id": "pwg",
+        "title": "Pro Wrestling Guerrilla",
+        "section": "Promotions",
+        "count": 108
+      },
+      {
+        "id": "rndm",
+        "title": "Surprise TV",
+        "section": "Star Channels",
+        "count": 2123
+      },
+      {
+        "id": "revpro",
+        "title": "Revolution Pro Wrestling",
+        "section": "Promotions",
+        "count": 197
+      },
+      {
+        "id": "piper",
+        "title": "Roddy Piper",
+        "section": "Star Channels",
+        "count": 16
+      },
+      {
+        "id": "croh",
+        "title": "Classic ROH",
+        "section": "Shows & Eras",
+        "count": 359
+      },
+      {
+        "id": "roh-wrestling",
+        "title": "ROH Wrestling",
+        "section": "Shows & Eras",
+        "count": 69
+      },
+      {
+        "id": "si-tv",
+        "title": "Shoot Interviews",
+        "section": "Star Channels",
+        "count": 47
+      },
+      {
+        "id": "st-tv",
+        "title": "SMW TV",
+        "section": "Star Channels",
+        "count": 206
+      },
+      {
+        "id": "sh-tv",
+        "title": "Stan Hansen",
+        "section": "Star Channels",
+        "count": 44
+      },
+      {
+        "id": "star",
+        "title": "Stardom",
+        "section": "Promotions",
+        "count": 719
+      },
+      {
+        "id": "stardom-5star",
+        "title": "Stardom 5Star Grand Prix",
+        "section": "Shows & Eras",
+        "count": 106
+      },
+      {
+        "id": "stardom-cinder",
+        "title": "Stardom Cinderella Tournament",
+        "section": "Shows & Eras",
+        "count": 27
+      },
+      {
+        "id": "stardom-goddes",
+        "title": "Stardom Goddesses of Stardom",
+        "section": "Shows & Eras",
+        "count": 89
+      },
+      {
+        "id": "tbn",
+        "title": "The Baba Network",
+        "section": "Star Channels",
+        "count": 21
+      },
+      {
+        "id": "muta",
+        "title": "The Great Muta",
+        "section": "Star Channels",
+        "count": 48
+      },
+      {
+        "id": "hhn",
+        "title": "The Hulk Hogan Network",
+        "section": "Star Channels",
+        "count": 57
+      },
+      {
+        "id": "tsn",
+        "title": "The Shoot Network",
+        "section": "Star Channels",
+        "count": 756
+      },
+      {
+        "id": "tjpw-tv",
+        "title": "TJPW",
+        "section": "Promotions",
+        "count": 94
+      },
+      {
+        "id": "tna",
+        "title": "Total Nonstop Action Wrestling",
+        "section": "Promotions",
+        "count": 843
+      },
+      {
+        "id": "ut-tv",
+        "title": "USWA TV",
+        "section": "Star Channels",
+        "count": 113
+      },
+      {
+        "id": "ve-tv",
+        "title": "Von Erich",
+        "section": "Star Channels",
+        "count": 33
+      },
+      {
+        "id": "wcpw",
+        "title": "What Culture Pro Wrestling",
+        "section": "Promotions",
+        "count": 94
+      },
+      {
+        "id": "wcw",
+        "title": "World Championship Wrestling",
+        "section": "Promotions",
+        "count": 944
+      },
+      {
+        "id": "wcw-cotc",
+        "title": "WCW Clash of the Champions",
+        "section": "Shows & Eras",
+        "count": 74
+      },
+      {
+        "id": "wcw-fallbrawl",
+        "title": "WCW Fall Brawl",
+        "section": "Shows & Eras",
+        "count": 26
+      },
+      {
+        "id": "wcw-bash",
+        "title": "WCW Great American Bash",
+        "section": "Shows & Eras",
+        "count": 20
+      },
+      {
+        "id": "wcw-halloween",
+        "title": "WCW Halloween Havoc",
+        "section": "Shows & Eras",
+        "count": 29
+      },
+      {
+        "id": "wcw-mainevent",
+        "title": "WCW Main Event",
+        "section": "Shows & Eras",
+        "count": 195
+      },
+      {
+        "id": "wcw-mn",
+        "title": "WCW Monday Nitro",
+        "section": "Shows & Eras",
+        "count": 144
+      },
+      {
+        "id": "wcw-powerhour",
+        "title": "WCW Power Hour",
+        "section": "Shows & Eras",
+        "count": 203
+      },
+      {
+        "id": "wcw-prime",
+        "title": "WCW Prime",
+        "section": "Shows & Eras",
+        "count": 55
+      },
+      {
+        "id": "wcw-pw",
+        "title": "WCW Pro Wrestling",
+        "section": "Shows & Eras",
+        "count": 299
+      },
+      {
+        "id": "wcw-sn",
+        "title": "WCW Saturday Night",
+        "section": "Shows & Eras",
+        "count": 490
+      },
+      {
+        "id": "wcw-starrcade",
+        "title": "WCW Starrcade in Tokyo Dome",
+        "section": "Shows & Eras",
+        "count": 33
+      },
+      {
+        "id": "wcw-superbrawl",
+        "title": "WCW SuperBrawl",
+        "section": "Shows & Eras",
+        "count": 26
+      },
+      {
+        "id": "wcw-worldwide",
+        "title": "WCW Worldwide",
+        "section": "Shows & Eras",
+        "count": 399
+      },
+      {
+        "id": "wm",
+        "title": "Wrestlemania",
+        "section": "Star Channels",
+        "count": 25
+      },
+      {
+        "id": "wwe",
+        "title": "WWE",
+        "section": "Promotions",
+        "count": 1109
+      },
+      {
+        "id": "wwe-velocity",
+        "title": "WWE Velocity",
+        "section": "Shows & Eras",
+        "count": 311
+      },
+      {
+        "id": "wwf",
+        "title": "WWF",
+        "section": "Promotions",
+        "count": 480
+      },
+      {
+        "id": "wwf-90-00",
+        "title": "WWF 1990-2000",
+        "section": "Shows & Eras",
+        "count": 904
+      },
+      {
+        "id": "wwf-ptw",
+        "title": "WWF Prime Time Wrestling",
+        "section": "Shows & Eras",
+        "count": 83
+      },
+      {
+        "id": "wwf-heat",
+        "title": "WWF Sunday Night Heat",
+        "section": "Shows & Eras",
+        "count": 81
+      },
+      {
+        "id": "wwf-mania",
+        "title": "WWF WrestleMania",
+        "section": "Shows & Eras",
+        "count": 40
+      },
+      {
+        "id": "wwf-challenge",
+        "title": "WWF Wrestling Challenge",
+        "section": "Shows & Eras",
+        "count": 117
+      }
+    ],
+    "json_bytes": 17222925
+  },
+  "vod_rebuilt": false
+}

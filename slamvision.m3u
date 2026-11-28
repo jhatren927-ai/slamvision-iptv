@@ -1,0 +1,321 @@
+#EXTM3U url-tvg="https://jhatren927-ai.github.io/slamvision-iptv/guide.xml" x-tvg-url="https://jhatren927-ai.github.io/slamvision-iptv/guide.xml"
+#EXTENC:UTF-8
+#PLAYLIST:SlamVision
+# SlamVision IPTV beta. Live URLs are the tape currently scheduled on each channel.
+# Playback starts at the beginning of that tape, not mid-show. Playlist refreshes every 30 minutes.
+#EXTINF:-1 tvg-id="yr-1975" tvg-name="Wrestling in 1975" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="1" group-title="Eras",Wrestling in 1975
+https://archive.org/download/11.12-antonio-inoki-vs.-bill-robinson-njpw-toukon-series-ii-1975-day-41/10.04%20Dick%20The%20Bruiser%20vs.%20Giant%20Baba%20AJPW%203rd%20Champion%20Carnival%201975%20Day%206.ia.mp4
+#EXTINF:-1 tvg-id="yr-1976" tvg-name="Wrestling in 1976" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="2" group-title="Eras",Wrestling in 1976
+https://archive.org/download/24.07-bill-robinson-vs.-giant-baba-ajpw-summer-action-series-1976-day-20/17.07%20Bill%20Robinson%20vs.%20Jumbo%20Tsuruta%20AJPW%20Summer%20Action%20Series%201976%20Day%2014.ia.mp4
+#EXTINF:-1 tvg-id="yr-1977" tvg-name="Wrestling in 1977" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="3" group-title="Eras",Wrestling in 1977
+https://archive.org/download/06.12-bill-robinson-horst-hoffman-vs.-dory-funk-jr.-terry-funk-ajpw-world-open-t/02.12%20Abdullah%20The%20Butcher%20%26%20The%20Sheik%20vs.%20Giant%20Baba%20%26%20Jumbo%20Tsuruta%20AJPW%20World%20Open%20Tag%20Team%20Championship%20Tournament%20Day%201.ia.mp4
+#EXTINF:-1 tvg-id="yr-1978" tvg-name="Wrestling in 1978" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="4" group-title="Eras",Wrestling in 1978
+https://archive.org/download/07.27-antonio-inoki-vs.-bob-backlund-njpw-summer-fight-series-1978-day-27/12.14%20Antonio%20Inoki%20vs.%20Bob%20Backlund%20NJPW%20Pre-Japan%20Championship%20Series%201978%20Day%2022.mp4
+#EXTINF:-1 tvg-id="yr-1979" tvg-name="Wrestling in 1979" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="5" group-title="Eras",Wrestling in 1979
+https://archive.org/download/06.15-hiro-matsuda-masa-saito-vs.-riki-choshu-seiji-sakaguchi-nwa-hollywood/12.07%20Dory%20Funk%20Jr.%20%26%20Terry%20Funk%20vs.%20Dos%20Caras%20%26%20Mil%20Mascaras%20AJPW%20Real%20World%20Tag%20League%201979%20Day%207.ia.mp4
+#EXTINF:-1 tvg-id="yr-1980" tvg-name="Wrestling in 1980" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="6" group-title="Eras",Wrestling in 1980
+https://archive.org/download/05.27-bob-backlund-vs.-dusty-rhodes-njpw-3rd-madison-square-garden-series-day-28/02.05%20Dynamite%20Kid%20vs.%20Tatsumi%20Fujinami%20NJPW%20New%20Year%20Golden%20Series%201980%20Day%2028.mp4
+#EXTINF:-1 tvg-id="yr-1981" tvg-name="Wrestling in 1981" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="7" group-title="Eras",Wrestling in 1981
+https://archive.org/download/04.23-antonio-inoki-vs.-stan-hansen-njpw-wwf-big-fight-series-ii-day-17/07.30%20Bill%20Robinson%20%26%20Genichiro%20Tenryu%20vs.%20Giant%20Baba%20%26%20Jumbo%20Tsuruta%20AJPW%20Summer%20Action%20Series%201981%20Day%2022.ia.mp4
+#EXTINF:-1 tvg-id="yr-1982" tvg-name="Wrestling in 1982" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="8" group-title="Eras",Wrestling in 1982
+https://archive.org/download/02.04-jumbo-tsuruta-vs.-nick-bockwinkel-ajpw-new-year-giant-series-1982-day-29/01.18%20Greg%20Valentine%20vs.%20Pedro%20Morales%20WWF%20on%20MSG%20Network.ia.mp4
+#EXTINF:-1 tvg-id="yr-1983" tvg-name="Wrestling in 1983" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="9" group-title="Eras",Wrestling in 1983
+https://archive.org/download/11.29-dory-funk-jr.-giant-baba-vs.-genichiro-tenryu-jumbo-tsuruta-ajpw-real-worl/09.24%20Buddy%20Rose%20vs.%20Dynamite%20Kid%20PNW.ia.mp4
+#EXTINF:-1 tvg-id="yr-1984" tvg-name="Wrestling in 1984" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="10" group-title="Eras",Wrestling in 1984
+https://archive.org/download/03.17-ric-flair-vs.-ricky-steamboat-macw-boogie-jam-1984/03.17%20Ric%20Flair%20vs.%20Ricky%20Steamboat%20MACW%20Boogie%20Jam%201984.ia.mp4
+#EXTINF:-1 tvg-id="year-1985" tvg-name="Wrestling in 1985" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1985.png" tvg-chno="11" group-title="Eras",Wrestling in 1985
+https://archive.org/download/dec.-1985-tbs-wwf-wrestling/Dec.%201985%20TBS%20WWF%20Wrestling.ia.mp4
+#EXTINF:-1 tvg-id="year-1986" tvg-name="Wrestling in 1986" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1986.png" tvg-chno="12" group-title="Eras",Wrestling in 1986
+https://archive.org/download/msw.-1986.03.01-mid-south-tv.x-265/UWF.1986.03.29%20Wrestling%20TV%20v2.x265.ia.mp4
+#EXTINF:-1 tvg-id="year-1987" tvg-name="Wrestling in 1987" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1987.png" tvg-chno="13" group-title="Eras",Wrestling in 1987
+https://archive.org/download/wcw.-1987.03.-nwa.-the.-great.-american.-bash.-tour-1987-set-a-ch/WCW.1987.03.NWA.The.Great.American.Bash.Tour%201987%20Set%20A%20-ch-.ia.mp4
+#EXTINF:-1 tvg-id="year-1988" tvg-name="Wrestling in 1988" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1988.png" tvg-chno="14" group-title="Eras",Wrestling in 1988
+https://archive.org/download/jwp-14th-july-1988-handheld-180842215-456241950/JWP_%2014th%20July%201988%20%20%28%20Handheld%29-180842215_456241950.ia.mp4
+#EXTINF:-1 tvg-id="year-1989" tvg-name="Wrestling in 1989" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1989.png" tvg-chno="15" group-title="Eras",Wrestling in 1989
+https://archive.org/download/nwa-starrcade-1989-future-shock-13-12-1989/NWA%20Starrcade%201989%20Future%20Shock%2013-12-1989.ia.mp4
+#EXTINF:-1 tvg-id="year-1990" tvg-name="Wrestling in 1990" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1990.png" tvg-chno="16" group-title="Eras",Wrestling in 1990
+https://archive.org/download/wcw.-main.-event.-complete/NWA.Main.Event.1990-05-06.mp4
+#EXTINF:-1 tvg-id="year-1991" tvg-name="Wrestling in 1991" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1991.png" tvg-chno="17" group-title="Eras",Wrestling in 1991
+https://archive.org/download/wcw.-me.-complete/WCW.ME.1991.04.21.mp4
+#EXTINF:-1 tvg-id="year-1992" tvg-name="Wrestling in 1992" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1992.png" tvg-chno="18" group-title="Eras",Wrestling in 1992
+https://archive.org/download/main-event-complete/main%20event%201-5-92.mp4
+#EXTINF:-1 tvg-id="year-1993" tvg-name="Wrestling in 1993" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1993.png" tvg-chno="19" group-title="Eras",Wrestling in 1993
+https://archive.org/download/2-16-93-njvs-war/2-16-93NJvsWAR.mp4
+#EXTINF:-1 tvg-id="year-1994" tvg-name="Wrestling in 1994" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1994.png" tvg-chno="20" group-title="Eras",Wrestling in 1994
+https://archive.org/download/wwf-wrestling-december-1994-from-action-zone-no-wwe-network-recaps-al-balog-480p-h-264-youtube/WWF%20Wrestling%20December%201994%20from%20Action%20Zone%20%28no%20WWE%20Network%20recaps%29%20-%20Al%20Balog%20%28480p%2C%20h264%2C%20youtube%29.mp4
+#EXTINF:-1 tvg-id="year-1995" tvg-name="Wrestling in 1995" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1995.png" tvg-chno="21" group-title="Eras",Wrestling in 1995
+https://archive.org/download/wcw-monday-nitro-9-4-1995-hd/WCW_Monday_Nitro_9_4_1995_HD.ia.mp4
+#EXTINF:-1 tvg-id="year-1996" tvg-name="Wrestling in 1996" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1996.png" tvg-chno="22" group-title="Eras",Wrestling in 1996
+https://archive.org/download/wcw.-saturday.-night.-complete_202406/WCW.Saturday.Night.03.23.96.mp4
+#EXTINF:-1 tvg-id="year-1997" tvg-name="Wrestling in 1997" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1997.png" tvg-chno="23" group-title="Eras",Wrestling in 1997
+https://archive.org/download/wcw.-saturday.-night.-complete_20240612/WCW.Saturday.Night.03.01.97.mp4
+#EXTINF:-1 tvg-id="year-1998" tvg-name="Wrestling in 1998" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1998.png" tvg-chno="24" group-title="Eras",Wrestling in 1998
+https://archive.org/download/wcw-wrestling-october-1998-from-worldwide-no-wwe-network-recaps-al-balog-480p-h-264-youtube/WCW%20Wrestling%20October%201998%20from%20Worldwide%20%28no%20WWE%20Network%20recaps%29%20-%20Al%20Balog%20%28480p%2C%20h264%2C%20youtube%29.mp4
+#EXTINF:-1 tvg-id="year-1999" tvg-name="Wrestling in 1999" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-1999.png" tvg-chno="25" group-title="Eras",Wrestling in 1999
+https://archive.org/download/wcw.-worldwide.-complete_202406/WCW.Worldwide.08.07.99.mp4
+#EXTINF:-1 tvg-id="year-2000" tvg-name="Wrestling in 2000" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-2000.png" tvg-chno="26" group-title="Eras",Wrestling in 2000
+https://archive.org/download/inoki_bom_ba_ye_2000_gaora_replay/2000.12.31k-Antonio%20Inoki%20Presents%20Dream%20Match%20Part%207-Kazushi%20Sakuraba%20VS%20Kendo%20Kashin.mp4
+#EXTINF:-1 tvg-id="year-2001" tvg-name="Wrestling in 2001" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/year-2001.png" tvg-chno="27" group-title="Eras",Wrestling in 2001
+https://archive.org/download/2001.03.15/2001.01.18.ia.mp4
+#EXTINF:-1 tvg-id="raw-93" tvg-name="1993 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="30" group-title="Eras",1993 RAW
+https://archive.org/download/WAR-1993/1993-09-13.ia.mp4
+#EXTINF:-1 tvg-id="raw-94" tvg-name="1994 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="31" group-title="Eras",1994 RAW
+https://archive.org/download/WAR-1994/1994-08-01.ia.mp4
+#EXTINF:-1 tvg-id="nitro-95" tvg-name="1995 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="32" group-title="Eras",1995 Nitro
+https://archive.org/download/ORTIN-1995/1995-10-02.ia.mp4
+#EXTINF:-1 tvg-id="raw-95" tvg-name="1995 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="33" group-title="Eras",1995 RAW
+https://archive.org/download/WAR-1995/1995-07-17.ia.mp4
+#EXTINF:-1 tvg-id="nitro-96" tvg-name="1996 NItro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="34" group-title="Eras",1996 NItro
+https://archive.org/download/ORTIN-1996/1996-11-25.ia.mp4
+#EXTINF:-1 tvg-id="nitro-97" tvg-name="1997 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="35" group-title="Eras",1997 Nitro
+https://archive.org/download/ORTIN-1997/1997-09-15.ia.mp4
+#EXTINF:-1 tvg-id="raw-97" tvg-name="1997 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="36" group-title="Eras",1997 RAW
+https://archive.org/download/WAR-1997/1997-10-20.ia.mp4
+#EXTINF:-1 tvg-id="nitro-98" tvg-name="1998 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="37" group-title="Eras",1998 Nitro
+https://archive.org/download/ORTIN-1998/1998-07-13.ia.mp4
+#EXTINF:-1 tvg-id="raw-98" tvg-name="1998 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="38" group-title="Eras",1998 RAW
+https://archive.org/download/WAR-1998/1998-09-21.ia.mp4
+#EXTINF:-1 tvg-id="nitro-99" tvg-name="1999 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="39" group-title="Eras",1999 Nitro
+https://archive.org/download/ORTIN-1999/1999-07-05.ia.mp4
+#EXTINF:-1 tvg-id="raw-99" tvg-name="1999 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="40" group-title="Eras",1999 RAW
+https://archive.org/download/WAR-1999/1999-09-13.ia.mp4
+#EXTINF:-1 tvg-id="nitro-2000" tvg-name="2000 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="41" group-title="Eras",2000 Nitro
+https://archive.org/download/ORTIN-2000/2000-09-11.ia.mp4
+#EXTINF:-1 tvg-id="raw-2000" tvg-name="2000 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="42" group-title="Eras",2000 RAW
+https://archive.org/download/WAR-2000/2000-09-11.ia.mp4
+#EXTINF:-1 tvg-id="nitro-2001" tvg-name="2001 Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="43" group-title="Eras",2001 Nitro
+https://archive.org/download/ORTIN-2001/2001-01-01.ia.mp4
+#EXTINF:-1 tvg-id="raw-2001" tvg-name="2001 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="44" group-title="Eras",2001 RAW
+https://archive.org/download/WAR-2001/2001-09-10.ia.mp4
+#EXTINF:-1 tvg-id="aew-elevation" tvg-name="AEW Dark Elevation" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/aew-elevation.png" tvg-chno="45" group-title="Shows",AEW Dark Elevation
+https://archive.org/download/aew-dark-episode-148-14-06-22/AEW%20Dark%20Episode%20148%2014-06-22.mp4
+#EXTINF:-1 tvg-id="aew-rampage" tvg-name="AEW Rampage" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/aew-rampage.png" tvg-chno="46" group-title="Shows",AEW Rampage
+https://archive.org/download/aew-rampage-new-years-smash-31-12-21/AEW%20Rampage%20New%20Year%27s%20Smash%2031-12-21.mp4
+#EXTINF:-1 tvg-id="aew-ai" tvg-name="Best of All In" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="47" group-title="Shows",Best of All In
+https://archive.org/download/Jan-17-1999-Dec-19-1999/03%2014%201999%20UC.ia.mp4
+#EXTINF:-1 tvg-id="ajpw" tvg-name="All Japan Pro-Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw.png" tvg-chno="48" group-title="Promotions",All Japan Pro-Wrestling
+https://archive.org/download/ajpw-new-age-chronicle-z-5-04-07-24/AJPW%20New%20Age%20Chronicle-Z5%2004-07-24.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-carnival" tvg-name="AJPW Champion Carnival" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-carnival.png" tvg-chno="49" group-title="Shows",AJPW Champion Carnival
+https://archive.org/download/ajpw-champion-carnival-2024-day-3-21-04-24/AJPW%20Champion%20Carnival%202024%20Day%203%2021-04-24.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-dynamite" tvg-name="AJPW Dynamite Series" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-dynamite.png" tvg-chno="50" group-title="Shows",AJPW Dynamite Series
+https://archive.org/download/ajpw-dynamite-series-2021-day-2-19-06-21/AJPW%20Dynamite%20Series%202021%20Day%202%2019-06-21.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-excite" tvg-name="AJPW Excite Series" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-excite.png" tvg-chno="51" group-title="Shows",AJPW Excite Series
+https://archive.org/download/ajpw-excite-series-2022-day-5-23-02-22/AJPW%20Excite%20Series%202022%20Day%205%2023-02-22.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-series" tvg-name="AJPW New Year Giant Series" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-series.png" tvg-chno="52" group-title="Shows",AJPW New Year Giant Series
+https://archive.org/download/ajpw-new-year-giant-series-2024-day-2-03-01-23/AJPW%20New%20Year%20Giant%20Series%202024%20Day%202%2003-01-23.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-tagleague" tvg-name="AJPW Real World Tag League" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-tagleague.png" tvg-chno="53" group-title="Shows",AJPW Real World Tag League
+https://archive.org/download/ajpw-real-world-tag-league-2021-day-7-28-11-21/AJPW%20Real%20World%20Tag%20League%202021%20Day%207%2028-11-21.ia.mp4
+#EXTINF:-1 tvg-id="ajpw-summer" tvg-name="AJPW Summer Action Series" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ajpw-summer.png" tvg-chno="54" group-title="Shows",AJPW Summer Action Series
+https://archive.org/download/ajpw-summer-action-series-2026-day-4-26-07-26/AJPW%20Summer%20Action%20Series%202026%20Day%204%2026-07-26.ia.mp4
+#EXTINF:-1 tvg-id="ain" tvg-name="Antonio Inoki Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ain.png" tvg-chno="55" group-title="Wrestlers",Antonio Inoki Network
+https://archive.org/download/inoki_bom_ba_ye_2000_gaora_replay/2000.12.31c-Antonio%20Inoki%20Presents%20Dream%20Match%20Part%201-Yoshiaki%20Fujiwara%20VS%20Justin%20McCully.mp4
+#EXTINF:-1 tvg-id="awa" tvg-name="American Wrestling Association" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/awa.png" tvg-chno="56" group-title="Promotions",American Wrestling Association
+https://archive.org/download/nwa-awa-nite-of-champions-ii-29-12-1985/NWA%20AWA%20Nite%20of%20Champions%20II%2029-12-1985.ia.mp4
+#EXTINF:-1 tvg-id="battlarts" tvg-name="BattlArts" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/battlarts.png" tvg-chno="57" group-title="Promotions",BattlArts
+https://archive.org/download/battlarts-12-21-1996/BATTLARTS%20%20-%20%2012-21-1996.mp4
+#EXTINF:-1 tvg-id="big-japan" tvg-name="Big Japan Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/big-japan.png" tvg-chno="58" group-title="Promotions",Big Japan Pro Wrestling
+https://archive.org/download/bjw-1999.12.04_202505/BJW%20-%201999.12.04.mp4
+#EXTINF:-1 tvg-id="bsn" tvg-name="Bloodsport Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/bsn.png" tvg-chno="59" group-title="Promotions",Bloodsport Network
+https://archive.org/download/gcw-josh-barnetts-bloodsport-5-20-02-21/GCW%20Josh%20Barnett%E2%80%99s%20Bloodsport%205%2020-02-21.ia.mp4
+#EXTINF:-1 tvg-id="chi" tvg-name="Chikara" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/chi.png" tvg-chno="60" group-title="Promotions",Chikara
+https://archive.org/download/2005-10-22-chikara-the-cibernetico-returneth/2005_10_22_CHIKARA_-_The_Cibernetico_Returneth.mp4
+#EXTINF:-1 tvg-id="cc-tv" tvg-name="Thanksgiving Network Today" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="61" group-title="Wrestlers",Thanksgiving Network Today
+https://www.youtube.com/watch?v=KviPbpNWyPQ
+#EXTINF:-1 tvg-id="czw-tv" tvg-name="Combat Zone Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/czw-tv.png" tvg-chno="62" group-title="Promotions",Combat Zone Wrestling
+https://archive.org/download/czw-new-year-resolutions/2008-06-14%20CZW%20Summer%20School.mp4
+#EXTINF:-1 tvg-id="ddt-pro" tvg-name="DDT Pro-Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ddt-pro.png" tvg-chno="63" group-title="Promotions",DDT Pro-Wrestling
+https://archive.org/download/sem-2008.09.08_202603/SEM%20-%202008.09.08.mp4
+#EXTINF:-1 tvg-id="death" tvg-name="Deathmatch" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/death.png" tvg-chno="64" group-title="Wrestlers",Deathmatch
+https://archive.org/download/bjw-in-korakuen-hall-16-11-21/BJW%20in%20Korakuen%20Hall%2016-11-21.ia.mp4
+#EXTINF:-1 tvg-id="dgtv" tvg-name="Dragongate" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/dgtv.png" tvg-chno="65" group-title="Promotions",Dragongate
+https://archive.org/download/dg-inf-gate-of-destiny-2025-d2/DRAGONGATE%20THE%20GATE%20OF%20DESTINY%202025%20-%20Day%202%20%282025.11.03%29.mp4
+#EXTINF:-1 tvg-id="93ecdub" tvg-name="ECW 1993" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="66" group-title="Eras",ECW 1993
+https://archive.org/download/wce93/12%20-%20June%2022nd%201993.mp4
+#EXTINF:-1 tvg-id="94ecdub" tvg-name="ECW 1994" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="67" group-title="Eras",ECW 1994
+https://archive.org/download/re-c-dub-1994-complete/1994/Hardcore%20TV/21%20-%20May%2031st%201994.mp4
+#EXTINF:-1 tvg-id="96ecdub" tvg-name="ECW 1996" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="68" group-title="Eras",ECW 1996
+https://archive.org/download/re-c-dub-1996-complete/1996/Hardcore%20TV/13%20-%20March%2026th%201996.mp4
+#EXTINF:-1 tvg-id="97ecdub" tvg-name="ECW 1997" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="69" group-title="Eras",ECW 1997
+https://archive.org/download/re-c-dub-1997-complete/1997/Hardcore%20TV/18%20-%20May%206th%201997.ia.mp4
+#EXTINF:-1 tvg-id="98ecdub" tvg-name="ECW 1998" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="70" group-title="Eras",ECW 1998
+https://archive.org/download/re-c-dub-1998-complete/1998/Hardcore%20TV/14%20-%20April%2011th%201998.ia.mp4
+#EXTINF:-1 tvg-id="99ecdub" tvg-name="ECW 1999" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="71" group-title="Eras",ECW 1999
+https://archive.org/download/re-c-dub-1999-complete/1999/Hardcore%20TV/36%20-%20September%204th%201999.mp4
+#EXTINF:-1 tvg-id="200ecdub" tvg-name="ECW 2000" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="72" group-title="Eras",ECW 2000
+https://archive.org/download/re-c-dub-2000-complete/2000/Hardcore%20TV/20%20-%20May%2013th%202000.mp4
+#EXTINF:-1 tvg-id="ecw-tv" tvg-name="Extreme Championship Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ecw-tv.png" tvg-chno="73" group-title="Promotions",Extreme Championship Wrestling
+https://archive.org/download/ecw-hardcore-heaven-1999_202601/ECW%20Hardcore%20Heaven%201999.mp4
+#EXTINF:-1 tvg-id="ecw-hardcoretv" tvg-name="ECW Hardcore TV" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ecw-hardcoretv.png" tvg-chno="74" group-title="Shows",ECW Hardcore TV
+https://archive.org/download/recdub2000540/32%20-%20August%205th%202000.mp4
+#EXTINF:-1 tvg-id="euromat" tvg-name="EuroMat" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/euromat.png" tvg-chno="75" group-title="Wrestlers",EuroMat
+https://archive.org/download/wcpw-state-of-emergency-from-peter-willis/WCPW%20State%20Of%20Emergency%20from%20Peter%20Willis.mp4
+#EXTINF:-1 tvg-id="fmw" tvg-name="Frontier Martial-Arts Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/fmw.png" tvg-chno="76" group-title="Promotions",Frontier Martial-Arts Wrestling
+https://archive.org/download/fmw10thanniversaryshow112399/FMW%2010th%20Anniversary%20Show%2011%2023%2099.mp4
+#EXTINF:-1 tvg-id="gcw-tv" tvg-name="Game Changer Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/gcw-tv.png" tvg-chno="77" group-title="Promotions",Game Changer Wrestling
+https://archive.org/download/10-19-2024-gcw-blood-on-the-hills-3/%2810-19-2024%29%20-%20GCW%20-%20Blood%20On%20The%20Hills%203.mp4
+#EXTINF:-1 tvg-id="hauwf" tvg-name="Herb Abrams Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="78" group-title="Wrestlers",Herb Abrams Network
+https://archive.org/download/HerbAbramsUWF/Herb%20Abrams%27%20UWF%20-%20_Lost_%20Episode.mp4
+#EXTINF:-1 tvg-id="hustle" tvg-name="HUSTLE -" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="79" group-title="Wrestlers",HUSTLE -
+https://archive.org/download/07-26-hustle-aid-2009-sumo-hall/%2807%EF%BC%8F26%29%20Hustle%20Aid%202009%20Sumo%20Hall.mp4
+#EXTINF:-1 tvg-id="ij-tv" tvg-name="IWA Japan" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="80" group-title="Wrestlers",IWA Japan
+https://archive.org/download/iwa-japan-09-17-1998-final-oriental-mystery-tour-samurai-tv-taped-09-07-1998-fro/IWA%20JAPAN%20-%2009-17-1998%20-%20_FINAL%20ORIENTAL%20MYSTERY%20TOUR_%20%28Samurai%21%20TV%29%20%28taped%2009-07-1998%20from%20Tokyo%20Korakuen%20Hall%29.ia.mp4
+#EXTINF:-1 tvg-id="jcw" tvg-name="Juggalo Championship Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="81" group-title="Promotions",Juggalo Championship Wrestling
+https://archive.org/download/jcw-lunacy/JCW%20Lunacy%20Episode%2044.ia.mp4
+#EXTINF:-1 tvg-id="nwa-crockett" tvg-name="Jim Crockett Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/nwa-crockett.png" tvg-chno="82" group-title="Promotions",Jim Crockett Network
+https://archive.org/download/wcw.-1986.01.-superstars-on-the-superstation-1986-ch-restored-2021/WCW.1986.01.Superstars%20on%20the%20Superstation%201986-ch%20restored%202021.ia.mp4
+#EXTINF:-1 tvg-id="cena" tvg-name="John Cena" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/cena.png" tvg-chno="83" group-title="Wrestlers",John Cena
+https://archive.org/download/johncenaheadcanon/John%20Cena%20Headcanon%20Season%203%20John%20Cena%20Sucks/John%20Cena%20Headcanon%20Season%203%20Ep%204%20The%20Salmon%20Suit.ia.mp4
+#EXTINF:-1 tvg-id="joshi-indies" tvg-name="Joshi Indies" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/joshi-indies.png" tvg-chno="84" group-title="Promotions",Joshi Indies
+https://archive.org/download/pro-wrestling-wave-itabashi-surprise-february-2026-2026.02.15/Pro%20Wrestling%20WAVE%20Itabashi%20Surprise%20February%202026%20%282026.02.15%29%5B1080p60%5D.ia.mp4
+#EXTINF:-1 tvg-id="joshi" tvg-name="Joshi Puroresu" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/joshi.png" tvg-chno="85" group-title="Promotions",Joshi Puroresu
+https://archive.org/download/stardom-in-fukui-2026-jun.-2026.06.27/STARDOM%20in%20FUKUI%202026%20Jun.%20%282026.06.27%29.mp4
+#EXTINF:-1 tvg-id="ajwc-tv" tvg-name="AJW Classics" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="86" group-title="Shows",AJW Classics
+https://archive.org/download/ajw-classics-210/AJW%20Classics%20%23210.ia.mp4
+#EXTINF:-1 tvg-id="jwp" tvg-name="JWP" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="87" group-title="Wrestlers",JWP
+https://archive.org/download/champforumtvwithwingjwpuniversalseptember19th1992/W%2AING-JWP%20-%201992.09.19.mp4
+#EXTINF:-1 tvg-id="kaientai-dojo" tvg-name="Kaientai Dojo" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/kaientai-dojo.png" tvg-chno="88" group-title="Promotions",Kaientai Dojo
+https://archive.org/download/k-dojo-club-k-super-evolution-2/k-dojo%20CLUB%20K%20super%20in%20kawagoe%202-8-2003.mp4
+#EXTINF:-1 tvg-id="omega-24-7" tvg-name="Kenny Omega" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/omega-24-7.png" tvg-chno="89" group-title="Wrestlers",Kenny Omega
+https://archive.org/download/kenny-omega-vs.-will-ospreay-full-rivalry/Kenny%20Omega%20vs.%20Will%20Ospreay%20-%20NJPW%20Wrestle%20Kingdom%2017.mp4
+#EXTINF:-1 tvg-id="100-lucha" tvg-name="Lucha Libre" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/100-lucha.png" tvg-chno="90" group-title="Promotions",Lucha Libre
+https://archive.org/download/team-cmll-vs-team-dragon-gate/Team%20CMLL%20vs%20Team%20Dragon%20Gate.ia.mp4
+#EXTINF:-1 tvg-id="marigold" tvg-name="Marigold" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/marigold.png" tvg-chno="91" group-title="Promotions",Marigold
+https://archive.org/download/marigold-battle-heart-day-7-17-10-25/Marigold%20Battle%20Heart%20Day%207%2017-10-25.ia.mp4
+#EXTINF:-1 tvg-id="memphis" tvg-name="Memphis Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/memphis.png" tvg-chno="92" group-title="Promotions",Memphis Wrestling
+https://archive.org/download/cwa800823to801220nashvillepartialshows/CWA%2080-08-23%20%20to%2080-12-20%20Nashville%20Partial%20Shows.mp4
+#EXTINF:-1 tvg-id="michinoku-pro" tvg-name="Michinoku Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/michinoku-pro.png" tvg-chno="93" group-title="Promotions",Michinoku Pro Wrestling
+https://archive.org/download/michinoku-pro-1993.08.24/Michinoku%20Pro%20-%201993.08.24.mp4
+#EXTINF:-1 tvg-id="midsouth" tvg-name="Mid-South Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/midsouth.png" tvg-chno="94" group-title="Promotions",Mid-South Wrestling
+https://archive.org/download/msw.-houston-disc-11.x-265/MSW.Houston%20Disc%2042.x265.ia.mp4
+#EXTINF:-1 tvg-id="mlw" tvg-name="Major League Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/mlw.png" tvg-chno="95" group-title="Promotions",Major League Wrestling
+https://archive.org/download/mlw-fusion-121-10-02-21/MLW%20Fusion%20121%2010-02-21.mp4
+#EXTINF:-1 tvg-id="njpw" tvg-name="New Japan Pro-Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw.png" tvg-chno="96" group-title="Promotions",New Japan Pro-Wrestling
+https://archive.org/download/njpw-best-of-the-super-junior-33-day-13-05-06-26/NJPW%20Best%20Of%20The%20Super%20Junior%2033%20Day%2013%2005-06-26.ia.mp4
+#EXTINF:-1 tvg-id="njpw-destructi" tvg-name="NJPW Destruction" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-destructi.png" tvg-chno="97" group-title="Shows",NJPW Destruction
+https://archive.org/download/njpw-10.10.2011-pt-2.mp-4/NJPW%2010.10.2011%20pt1.mp4.ia.mp4
+#EXTINF:-1 tvg-id="njpw-fighting" tvg-name="NJPW Fighting Spirit" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="98" group-title="Shows",NJPW Fighting Spirit
+https://archive.org/download/fighting-spirit-92-super-warrior-in-yokohama-arena-big-fight-series-world-pro-wrestling/1992.02.04e-NJPW-Riki%20Choshu%2C%20Keiji%20Muto%2C%20Shinya%20Hashimoto%20VS%20Crusher%20Bam%20Bam%20Bigelow%2C%20Scott%20Norton%2C%20Rambo.mp4
+#EXTINF:-1 tvg-id="njpw-g1climax" tvg-name="NJPW G1 Climax" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-g1climax.png" tvg-chno="99" group-title="Shows",NJPW G1 Climax
+https://archive.org/download/njpw-g-1-climax-31-day-3-23-09-21/NJPW%20G1%20Climax%2031%20Day%203%2023-09-21.mp4
+#EXTINF:-1 tvg-id="njpw-japan" tvg-name="NJPW New Japan Cup" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="100" group-title="Shows",NJPW New Japan Cup
+https://archive.org/download/njpw-new-japan-cup-2026-day-7-13-03-26/NJPW%20New%20Japan%20Cup%202026%20Day%207%2013-03-26.ia.mp4
+#EXTINF:-1 tvg-id="njpw-beginning" tvg-name="NJPW The New Beginning" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="101" group-title="Shows",NJPW The New Beginning
+https://archive.org/download/njpw-the-new-beginning-usa-2022-episode-1-05-02-22/NJPW%20The%20New%20Beginning%20USA%202022%20Episode%201%2005-02-22.ia.mp4
+#EXTINF:-1 tvg-id="njpw-wp" tvg-name="NJPW World Pro-Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wp.png" tvg-chno="102" group-title="Shows",NJPW World Pro-Wrestling
+https://archive.org/download/explosion-tour-92-and-super-warrior-in-osaka-castle-hall-world-pro-wrestling/1992.05.01b-NJPW-IWGP%20Tag%20Championship-Big%20Van%20Vader%2C%20Crusher%20Bam%20Bam%20Bigelow%20%28C-V2%29%20VS%20Keiji%20Muto%2C%20Hiroshi%20Hase.mp4
+#EXTINF:-1 tvg-id="njpw-league" tvg-name="NJPW World Tag League" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="103" group-title="Shows",NJPW World Tag League
+https://archive.org/download/njpw-world-tag-league-2020-day-8-04-12-20/NJPW%20World%20Tag%20League%202020%20Day%208%2004-12-20.ia.mp4
+#EXTINF:-1 tvg-id="njpw-wk" tvg-name="NJPW Wrestle Kingdom" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wk.png" tvg-chno="104" group-title="Shows",NJPW Wrestle Kingdom
+https://archive.org/download/njpw-wrestle-kingdom-12-2018-1080p-webrip-aac/NJPW%20Wrestle%20Kingdom%2012%20%282018%29%20%28ENG%29%20ORIGINAL.ia.mp4
+#EXTINF:-1 tvg-id="njpw-wrestling" tvg-name="NJPW Wrestling Dontaku" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/njpw-wrestling.png" tvg-chno="105" group-title="Shows",NJPW Wrestling Dontaku
+https://archive.org/download/njpw.-road.-to.-wrestling.-dontaku.-2026.04.26.-ja.-720p.-web.h-264-hc/NJPW.New.Japan.Road.In.Karatsu.Ignition.To.Dominion.2026.05.06.JA.1080p.WEB.h264-PH.mp4.mp4
+#EXTINF:-1 tvg-id="noah-tv" tvg-name="NOAH-TV" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-tv.png" tvg-chno="106" group-title="Promotions",NOAH-TV
+https://archive.org/download/noah-departure-1-first-show-08-05-2000-480p-2026-09-17/NOAH%20Departure%20%231%20%28First%20Show%29%20-%2008-05-2000-480p-2026-09-17.mp4
+#EXTINF:-1 tvg-id="noah-voyage" tvg-name="NOAH Great Voyage" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-voyage.png" tvg-chno="107" group-title="Shows",NOAH Great Voyage
+https://archive.org/download/noah-10.10.2009-pt-2/NOAH%2010.10.2009%20pt1.ia.mp4
+#EXTINF:-1 tvg-id="noah-n1victory" tvg-name="NOAH N-1 Victory" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-n1victory.png" tvg-chno="108" group-title="Shows",NOAH N-1 Victory
+https://archive.org/download/noah-n-1-victory-2024-day-9-01-09-24/NOAH%20N-1%20Victory%202024%20Day%209%2001-09-24.ia.mp4
+#EXTINF:-1 tvg-id="noah-navigatio" tvg-name="NOAH Navigation" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/noah-navigatio.png" tvg-chno="109" group-title="Shows",NOAH Navigation
+https://archive.org/download/noah-2.11.2010-pt-2/NOAH%202.11.2010%20pt2.ia.mp4
+#EXTINF:-1 tvg-id="osaka-pro" tvg-name="Osaka Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/osaka-pro.png" tvg-chno="110" group-title="Promotions",Osaka Pro Wrestling
+https://archive.org/download/2001.01.07-osaka-pro-story-2/2010/2010.08.20%20Summer%20Action%20Series%20II.mp4
+#EXTINF:-1 tvg-id="pwg" tvg-name="Pro Wrestling Guerrilla" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/pwg.png" tvg-chno="111" group-title="Promotions",Pro Wrestling Guerrilla
+https://archive.org/download/pwg.-2005.05.13.-jason.-takes.-pwg.-dvdrip.x-264-rudos/PWG.2005.03.12.The.Ernest.P.Worrell.Memorial.DVDRip.x264-RUDOS.mp4
+#EXTINF:-1 tvg-id="rndm" tvg-name="Surprise TV" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/rndm.png" tvg-chno="112" group-title="Wrestlers",Surprise TV
+https://archive.org/download/noah-29.9.2009-pt-2/NOAH%2029.9.2009%20pt2.ia.mp4
+#EXTINF:-1 tvg-id="raw-96" tvg-name="1996 RAW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="113" group-title="Eras",1996 RAW
+https://archive.org/download/WAR-199six/1996-06-10.ia.mp4
+#EXTINF:-1 tvg-id="revpro" tvg-name="Revolution Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/revpro.png" tvg-chno="114" group-title="Promotions",Revolution Pro Wrestling
+https://archive.org/download/rev-pro-live-in-southampton-16-13-02-22/RevPro%20Live%20In%20Southampton%2016%2013-02-22.ia.mp4
+#EXTINF:-1 tvg-id="piper" tvg-name="Roddy Piper" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/piper.png" tvg-chno="115" group-title="Wrestlers",Roddy Piper
+https://archive.org/download/rowdy-roddy-piper-the-ultimate-collection-volume-14/Rowdy%20Roddy%20Piper%20-%20The%20Ultimate%20Collection%20-%20Volume%20%2314.mp4
+#EXTINF:-1 tvg-id="croh" tvg-name="Classic ROH" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/croh.png" tvg-chno="116" group-title="Eras",Classic ROH
+https://archive.org/download/roh-on-honorclub-158-2026-03-12/2026-03-12%20ROH%20on%20HonorClub%20%23158.ia.mp4
+#EXTINF:-1 tvg-id="roh-wrestling" tvg-name="ROH Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/roh-wrestling.png" tvg-chno="117" group-title="Shows",ROH Wrestling
+https://archive.org/download/roh-wrestling-30-07-21/ROH%20Wrestling%2030-07-21.mp4
+#EXTINF:-1 tvg-id="si-tv" tvg-name="Shoot Interviews" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/si-tv.png" tvg-chno="118" group-title="Wrestlers",Shoot Interviews
+https://archive.org/download/jim-ross-jim-cornette-the-rise-of-the-attitude-era-inside-the-ropes-live-q-a.-ts/Wrestling%20Shoot%20Interviews/Ric%20Flair%20Shoot%20Interview%20-%204%20Disk%20XviD/Ric%20Flair%20Shoot%20Interview%20Disk%202.mp4
+#EXTINF:-1 tvg-id="st-tv" tvg-name="SMW TV" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/st-tv.png" tvg-chno="119" group-title="Wrestlers",SMW TV
+https://archive.org/download/smw-tv-1992-06-20/SMW%20TV%201992-07-11.mp4
+#EXTINF:-1 tvg-id="sh-tv" tvg-name="Stan Hansen" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/sh-tv.png" tvg-chno="120" group-title="Wrestlers",Stan Hansen
+https://archive.org/download/ajpw-the-destroyer-retirement-match-pro-wres-memory-of-fierce-fight/1993.07.29d-AJPW-Special%20Match-Kenta%20Kobashi%20VS%20Stan%20Hansen.mp4
+#EXTINF:-1 tvg-id="star" tvg-name="Stardom" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/star.png" tvg-chno="121" group-title="Promotions",Stardom
+https://archive.org/download/stardom-in-korakuen-hall-29-06-24/Stardom%20in%20Korakuen%20Hall%2029-06-24.ia.mp4
+#EXTINF:-1 tvg-id="stardom-5star" tvg-name="Stardom 5Star Grand Prix" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-5star.png" tvg-chno="122" group-title="Shows",Stardom 5Star Grand Prix
+https://archive.org/download/stardom-5-star-grand-prix-2023-day-18-18-09-23/Stardom%205STAR%20Grand%20Prix%202023%20Day%2018%2018-09-23.ia.mp4
+#EXTINF:-1 tvg-id="stardom-cinder" tvg-name="Stardom Cinderella Tournament" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-cinder.png" tvg-chno="123" group-title="Shows",Stardom Cinderella Tournament
+https://archive.org/download/stardom-cinderella-tournament-2024-day-4-17-03-24/Stardom%20Cinderella%20Tournament%202024%20Day%204%2017-03-24.ia.mp4
+#EXTINF:-1 tvg-id="stardom-goddes" tvg-name="Stardom Goddesses of Stardom" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/stardom-goddes.png" tvg-chno="124" group-title="Shows",Stardom Goddesses of Stardom
+https://archive.org/download/stardom-goddesses-of-stardom-tag-league-2024-day-8-10-11-24/Stardom%20Goddesses%20Of%20Stardom%20Tag%20League%202024%20Day%208%2010-11-24.ia.mp4
+#EXTINF:-1 tvg-id="tbn" tvg-name="The Baba Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/tbn.png" tvg-chno="125" group-title="Wrestlers",The Baba Network
+https://archive.org/download/giant_baba_best_of_the_best_vol_5_stan_hansen_bruiser_brody_team_202012/1984.08.26a-AJPW-PWF%20World%20Tag%20Championship-Stan%20Hansen%20%26%20Bruiser%20Brody%20%28C%29%20VS%20Giant%20Baba%20%26%20Dory%20Funk%2C%20Jr..mp4
+#EXTINF:-1 tvg-id="muta" tvg-name="The Great Muta" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/muta.png" tvg-chno="126" group-title="Wrestlers",The Great Muta
+https://archive.org/download/60fps-war-osaka-crush-night-tenryu-vs-muta-10-11-96/1996.10.11-WAR-OSAKA%20CRUSH%20NIGHT%21/1996.10.11h-WAR-DOUBLE%20MAIN%20EVENT%20VOL.%201-W.A.R%20Authorized%20World%206-Man%20Tag%20Championship%20Match-Takada%2C%20Kakihara%2C%20Sano%20%28UWFI%29%20%28C-V1%29%20VS%20Fuyuki%2C%20Bigelow%2C%20Anjo.mp4
+#EXTINF:-1 tvg-id="hhn" tvg-name="The Hulk Hogan Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/hhn.png" tvg-chno="127" group-title="Wrestlers",The Hulk Hogan Network
+https://archive.org/download/njpw-iwgp-biographies-complete-box-i-and-ii/1985.06.13b-NJPW-IWGP%20Heavyweight%20Championship-Antonio%20Inoki%20%28C%29%20VS%20Hulk%20Hogan.mp4
+#EXTINF:-1 tvg-id="tsn" tvg-name="The Shoot Network" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/tsn.png" tvg-chno="128" group-title="Wrestlers",The Shoot Network
+https://archive.org/download/60fps-uwfi-94-pro-wrestling-world-tournament-semi-final-6-27-94-tv-on-air/1994.06.10-UWFI-U.W.F.%20International%20%2794%20Pro-Wrestling%20World%20Tournament%20Semi%20Final-TV/1994.06.10e-UWFI-%2794%20Pro-Wrestling%20World%20Tournament%20Semi%20Final-Nobuhiko%20Takada%20VS%20Gary%20Albright.mp4
+#EXTINF:-1 tvg-id="tjpw-tv" tvg-name="TJPW" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/tjpw-tv.png" tvg-chno="129" group-title="Promotions",TJPW
+https://archive.org/download/2023.02.18.-tjpwedit/2023.02.18.TJPWedit.mp4
+#EXTINF:-1 tvg-id="tna" tvg-name="Total Nonstop Action Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/tna.png" tvg-chno="130" group-title="Promotions",Total Nonstop Action Wrestling
+https://archive.org/download/impact-wrestling-05-08-21/Impact%20Wrestling%2005-08-21.mp4
+#EXTINF:-1 tvg-id="ut-tv" tvg-name="USWA TV" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ut-tv.png" tvg-chno="131" group-title="Wrestlers",USWA TV
+https://archive.org/download/uswa-championship-sports-90-08-25_202009/USWA%2091-05-18.mp4
+#EXTINF:-1 tvg-id="uwfi-i-tv" tvg-name="UWFi" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="132" group-title="Wrestlers",UWFi
+https://archive.org/download/uwf-i-all-out-contend-battle-11.10.1995/UWF-I%20All-Out%20Contend%20Battle%2011.10.1995.ia.mp4
+#EXTINF:-1 tvg-id="ve-tv" tvg-name="Von Erich" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/ve-tv.png" tvg-chno="133" group-title="Wrestlers",Von Erich
+https://archive.org/download/wccw-82.08.15-star-wars-restored-ch/WCCW%2083.12.25%20Christmas%20Star%20Wars%20restored-ch.ia.mp4
+#EXTINF:-1 tvg-id="wcpw" tvg-name="What Culture Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcpw.png" tvg-chno="134" group-title="Promotions",What Culture Pro Wrestling
+https://archive.org/download/ringmaster-tournament-night-two-from-peter-willis/Ringmaster%20Tournament%20Night%20Two%20from%20Peter%20Willis.mp4
+#EXTINF:-1 tvg-id="wcw" tvg-name="World Championship Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw.png" tvg-chno="135" group-title="Promotions",World Championship Wrestling
+https://archive.org/download/Jan-01-2001-Mar-26-2001/02%2019%202001%20N.mp4
+#EXTINF:-1 tvg-id="wcw-cotc" tvg-name="WCW Clash of the Champions" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-cotc.png" tvg-chno="136" group-title="Shows",WCW Clash of the Champions
+https://archive.org/download/nwa-clash-of-the-champions-7-guts-and-glory-14-06-1989/NWA%20Clash%20Of%20The%20Champions%207%20Guts%20And%20Glory%2014-06-1989.ia.mp4
+#EXTINF:-1 tvg-id="wcw-fallbrawl" tvg-name="WCW Fall Brawl" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-fallbrawl.png" tvg-chno="137" group-title="Shows",WCW Fall Brawl
+https://archive.org/download/Jan-5-1998-Dec-28-1998-2/09%2013%201998%20FB.ia.mp4
+#EXTINF:-1 tvg-id="wcw-bash" tvg-name="WCW Great American Bash" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-bash.png" tvg-chno="138" group-title="Shows",WCW Great American Bash
+https://archive.org/download/jan-01-1996-dec-30-1996/06%2016%201996%20GAB.ia.mp4
+#EXTINF:-1 tvg-id="wcw-halloween" tvg-name="WCW Halloween Havoc" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-halloween.png" tvg-chno="139" group-title="Shows",WCW Halloween Havoc
+https://archive.org/download/nwa-halloween-havoc-1989-settling-the-score-28-10-1989/NWA%20Halloween%20Havoc%201989%20Settling%20The%20Score%2028-10-1989.ia.mp4
+#EXTINF:-1 tvg-id="wcw-mainevent" tvg-name="WCW Main Event" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-mainevent.png" tvg-chno="140" group-title="Shows",WCW Main Event
+https://archive.org/download/wcw.-main.-event.-complete/NWA.Main.Event.1990-10-14.mp4
+#EXTINF:-1 tvg-id="wcw-mn" tvg-name="WCW Monday Nitro" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-mn.png" tvg-chno="141" group-title="Shows",WCW Monday Nitro
+https://archive.org/download/wcw-1997-reupload-wwearchives/024.%20WCW%20Monday%20Nitro_S03E19_May%2012%2C%201997.mp4
+#EXTINF:-1 tvg-id="wcw-powerhour" tvg-name="WCW Power Hour" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-powerhour.png" tvg-chno="142" group-title="Shows",WCW Power Hour
+https://archive.org/download/nwa-wcw-power-hour-complete/NWA.Power.Hour.1990-10-12.mp4
+#EXTINF:-1 tvg-id="wcw-prime" tvg-name="WCW Prime" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-prime.png" tvg-chno="143" group-title="Shows",WCW Prime
+https://archive.org/download/prime-95-complete/08-14-95-Prime.mp4
+#EXTINF:-1 tvg-id="wcw-pw" tvg-name="WCW Pro Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-pw.png" tvg-chno="144" group-title="Shows",WCW Pro Wrestling
+https://archive.org/download/wcw-pro-10-20-90_202404/WCW%20PRO%208-4-90.mp4
+#EXTINF:-1 tvg-id="wcw-sn" tvg-name="WCW Saturday Night" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-sn.png" tvg-chno="145" group-title="Shows",WCW Saturday Night
+https://archive.org/download/1992-12-26-wcw-saturday-night/1992-09-19-WCW%20Saturday%20Night.ia.mp4
+#EXTINF:-1 tvg-id="wcw-starrcade" tvg-name="WCW Starrcade in Tokyo Dome" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-starrcade.png" tvg-chno="146" group-title="Shows",WCW Starrcade in Tokyo Dome
+https://archive.org/download/10-wcw-halloween-havoc-1996/12%20WCW%20Starrcade%201996.mp4
+#EXTINF:-1 tvg-id="wcw-superbrawl" tvg-name="WCW SuperBrawl" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-superbrawl.png" tvg-chno="147" group-title="Shows",WCW SuperBrawl
+https://archive.org/download/Jan-16-2000-Dec-17-2000/02%2020%202000%20SB.ia.mp4
+#EXTINF:-1 tvg-id="wcw-worldwide" tvg-name="WCW Worldwide" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wcw-worldwide.png" tvg-chno="148" group-title="Shows",WCW Worldwide
+https://archive.org/download/11-07-92.-wcw-worldwide-complete/04-18-92.WCW%20Worldwide.mp4
+#EXTINF:-1 tvg-id="w1-tv" tvg-name="Wrestle 1" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="149" group-title="Wrestlers",Wrestle 1
+https://archive.org/download/WRESTLE-1.05.01.2019/%2805.01.2019%29%20WRESTLE-1%20Tour%202019%20Sunrise-%20Tag%201.ia.mp4
+#EXTINF:-1 tvg-id="wm" tvg-name="Wrestlemania" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wm.png" tvg-chno="150" group-title="Wrestlers",Wrestlemania
+https://archive.org/download/wrestlemania-collection-1-42/Wrestlemania%20Collection%201-42%20%28wm%2036%20missing%29/Wrestlemania%2039/Wrestlemania%20XXXIX%20%282023%29%20Night%201.mp4
+#EXTINF:-1 tvg-id="wsx" tvg-name="Wrestling Society X" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="151" group-title="Promotions",Wrestling Society X
+https://archive.org/download/wrestling-society-x-complete/Wrestling%20Society%20X%20Episode%202%20%2B%20WSXtra.mp4
+#EXTINF:-1 tvg-id="wwe" tvg-name="WWE" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwe.png" tvg-chno="152" group-title="Promotions",WWE
+https://archive.org/download/2005.11.18/2005.03.17.ia.mp4
+#EXTINF:-1 tvg-id="wwe-velocity" tvg-name="WWE Velocity" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwe-velocity.png" tvg-chno="153" group-title="Shows",WWE Velocity
+https://archive.org/download/wwf-wrestling-january-2006-from-velocity-no-wwe-network-recaps-al-balog-480p-h-264-youtube/WWF%20Wrestling%20January%202006%20from%20Velocity%20%28no%20WWE%20Network%20recaps%29%20-%20Al%20Balog%20%28480p%2C%20h264%2C%20youtube%29.mp4
+#EXTINF:-1 tvg-id="wwf" tvg-name="WWF" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf.png" tvg-chno="154" group-title="Promotions",WWF
+https://archive.org/download/wwf-wrestling-october-1991/WWF%20Wrestling%20October%201991.mp4
+#EXTINF:-1 tvg-id="wwf-90-00" tvg-name="WWF 1990-2000" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-90-00.png" tvg-chno="155" group-title="Shows",WWF 1990-2000
+https://archive.org/download/2004.06.24/2004.08.12.ia.mp4
+#EXTINF:-1 tvg-id="wwf-ptw" tvg-name="WWF Prime Time Wrestling" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-ptw.png" tvg-chno="157" group-title="Shows",WWF Prime Time Wrestling
+https://archive.org/download/Prime-Time-Wrestling-Sept-1989/04%20Prime%20Time%20Wrestling%20Sept%201989.mp4
+#EXTINF:-1 tvg-id="wwf-heat" tvg-name="WWF Sunday Night Heat" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-heat.png" tvg-chno="158" group-title="Shows",WWF Sunday Night Heat
+https://archive.org/download/september-2002-wwe-sunday-night-heat/09.22%20Sunday%20Night%20Heat.mp4
+#EXTINF:-1 tvg-id="wwf-mania" tvg-name="WWF WrestleMania" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-mania.png" tvg-chno="159" group-title="Shows",WWF WrestleMania
+https://archive.org/download/wrestlemania-pittsburgh-broadcast/Wrestlemania%20Pittsburgh%20Broadcast.ia.mp4
+#EXTINF:-1 tvg-id="wwf-challenge" tvg-name="WWF Wrestling Challenge" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logos/wwf-challenge.png" tvg-chno="160" group-title="Shows",WWF Wrestling Challenge
+https://archive.org/download/wwfwrestlingchallenge052889/WWF%20Wrestling%20Challenge%2005%2028%2089.mp4
+#EXTINF:-1 tvg-id="xwf" tvg-name="XWF" tvg-logo="https://jhatren927-ai.github.io/slamvision-iptv/logo.png" tvg-chno="161" group-title="Wrestlers",XWF
+https://archive.org/download/xpw-original-run/Xtreme%20Pro%20Wrestling/2001/2001.05.19%20-%20XPW%20TV%20%2351.mp4
